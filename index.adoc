@@ -2,4 +2,13 @@
 
 This is actually the first page I have generated for this server.
 
+<<<
+
 IMPORTANT: Many more to come.
+
+NOTE: What does this look like.
+
+WARNING: Or this?
+
+== First section
+Is there anything else I must do? I think I should write more text here.
