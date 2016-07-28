@@ -1,5 +1,11 @@
 = Hello World
 
+++++
+<script src="https://use.fontawesome.com/96d0595752.js"></script>
+++++
+
+:icons: font
+
 This is actually the first page I have generated for this server.
 
 <<<
