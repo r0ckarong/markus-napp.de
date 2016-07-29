@@ -10,11 +10,14 @@ This is actually the first page I have generated for this server.
 
 <<<
 
-IMPORTANT: Many more to come.
+If you have any questions reach me via email `_mail AT markus-napp.de_`
 
-NOTE: What does this look like.
+== TODOs
 
-WARNING: Or this?
-
-== First section
-Is there anything else I must do? I think I should write more text here.
+- [x] Set up Ubuntu 16.04 LTS Server on EC2
+- [x] Set up AsciiDoctor
+- [x] Move Domain to Route 53
+- [x] Set up Hosted Zones
+- [x] Set up SSL Cert
+- [x] Set up Mail Forwarding
+- [ ] Write Content
