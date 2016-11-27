@@ -5,6 +5,7 @@
 :revdate: 27/11/2016
 :imagesdir: images
 :toc-title: Inhalt
+:icons: font
 
 <<<
 
