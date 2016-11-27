@@ -13,4 +13,4 @@
 
 == Rezepte
 
-* link:Rotwein-Schalotten-Sauce.html[Rotwein-Schalotten-Sauce]
+* link:rezepte/rotwein-schalotten-sauce.html[Rotwein-Schalotten-Sauce]
