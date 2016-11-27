@@ -1,0 +1,89 @@
+= Rotwein - Schalotten - Sauce
+:author: Markus Napp
+:email: markus.napp@gmail.com
+:revnumber: 1.0
+:revdate: 27/11/2016
+:imagesdir: images
+:toc-title: Inhalt
+
+<<<
+
+image::rotwein-schalotten-sauce.jpg[Rotwein Schalotten Sauce]
+
+== Zutaten
+
+[options="header",cols="25,75"]
+|===
+|Gewicht |Zutat
+
+|500 gr
+|Schalotten
+
+|100 gr
+|Rote Zwiebel
+
+|2 Stück
+|Knoblauchzehen
+
+|1 Stück
+|Rosmarinzweig
+
+|4 Stück
+|Nelken
+
+|0,7 L
+|Rotwein
+
+|800 ml
+|Rinderfond
+
+|5 EL
+|Olivenöl
+
+|100ml
+|Balsamico Essig
+
+|1 EL
+|Zitronensaft
+
+|2 EL
+|Worcestershire Sauce
+
+|1/2 EL
+|Ahornsirup
+
+|50 gr
+|Butter (ungesalzen)
+
+|3 TL
+|Kakaopulver (ungesüsst)
+
+|1/2 TL
+|Muskatnuss (gerieben)
+
+
+|Nach Geschmack
+|Schwarzer Pfeffer
+
+|Nach Geschmack
+|Salz
+
+|===
+
+== Zubereitung
+
+1. Die Zwiebeln und Schalottten in sehr feine Streifen schneiden. Die Knoblauchzehe andrücken bis die Schale aufplatzt. Einen großen Zweig Rosmarin abtrennen.
+
+2. Das Olivenöl in einer mittelgroßen Kasserolle auf mittlerer bis starker Hitze aufheizen. Schalotten und Zwiebeln darin kräftig andünsten bis sie ein wenig braun sind. (ca. 5-10 Minuten). Mit Salz und schwarzem Pfeffer würzen.
+
+3. Den Balsamico, Zitronensaft, Worcestershire, Rosmarin, Nelken und Knoblauch hinzu geben und weiter andünsten bis die Flüssigkeiten völlig in die Zwiebelmischung absobiert wurde.
+
+4. Mit dem kompletten Rotwein ablöschen und aufkochen lassen. Die Flüssigkeit einreduzieren bis sie leicht sämig geworden ist.
+
+5. Den Rinderfond hinzu geben. Die Flüssigkeit auf zwei Drittel einreduzieren.
+
+6. Den kompletten Sud durch ein Sieb in einen kleineren Topf abseihen. Die im Sieb verbliebenen Zwiebeln auspressen so dass der komplette Sud im zweiten Topf aufgefangen wird. Muskat, Ahornsirup und Kakaopulver einrühren. Aufkochen lassen.
+
+7. Die Butter hinzu geben und unter stätigem Rühren untermontieren. Weiter bis zur gewünschten Konsistenz einkochen lassen.
+
+8. Fertig
