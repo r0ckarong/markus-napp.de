@@ -8,6 +8,10 @@
 
 <<<
 
+++++
+<script src="https://use.fontawesome.com/96d0595752.js"></script>
+++++
+
 image::rotwein-schalotten-sauce.jpg[Rotwein Schalotten Sauce]
 
 == Zutaten
@@ -69,6 +73,8 @@ image::rotwein-schalotten-sauce.jpg[Rotwein Schalotten Sauce]
 |Salz
 
 |===
+
+NOTE: Ergibt je nach Reduzierung ca. 200-300 ml Sauce.
 
 == Zubereitung
 
