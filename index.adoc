@@ -18,4 +18,5 @@
 
 == Other Nonsense
 
+* link:bands.adoc[Bands I like]
 * link:shows-i-cant-believe-are-still-on-air.html[Shows I can't believe are still on air]
