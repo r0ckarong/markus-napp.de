@@ -1,0 +1,40 @@
+= Rezept
+:author: Markus Napp
+:email: markus.napp@gmail.com
+:revnumber: 2.0
+:revdate: 19/12/2016
+:imagesdir: images
+:toc-title: Inhalt
+:icons: font
+
+<<<
+
+++++
+<script src="https://use.fontawesome.com/96d0595752.js"></script>
+++++
+
+== Zutaten
+
+[options="header",cols="25,75"]
+|===
+|Gewicht |Zutat
+
+|===
+
+NOTE: Ergibt X Portionen
+
+== Zubereitung
+
+. Schritt 1
+. Schritt 2
+. Schritt 3
+
+TIP: Tipp zu Schritt 3
+
+[start=4]
+
+. Schritt 4
+
+*Lasst's euch schmecken!*
+
+include::einheiten.adoc[Maßeinheiten]
