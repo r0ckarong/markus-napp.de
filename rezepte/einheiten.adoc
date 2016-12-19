@@ -1,0 +1,34 @@
+== Maßangaben
+
+.Maßeinheiten
+[options="header",cols="2",title="Maßeinheiten"]
+|===
+|Abkürzung
+|Einheit
+
+|gr
+|Gramm
+
+|Kg
+|Kilogramm (1000 Gramm)
+
+|TL
+|Teelöffel (ca. 5ml)
+
+|EL
+|Esslöffel (ca. 15ml)
+
+|ml
+|Milliliter
+
+|L
+|Liter (1000 ml)
+|===
+
+== Zwiebelgrößen
+
+Kleine Zwiebel = Ping Pong Ball -> Golfball
+
+mittelgroße Zwiebel = Tennisball -> Baseball
+
+große Zwiebel = => Handball (dann wird's lächerlich)
