@@ -94,3 +94,7 @@ NOTE: Ergibt je nach Reduzierung ca. 200-300 ml Sauce.
 7. Die Butter hinzu geben und unter stätigem Rühren untermontieren. Weiter bis zur gewünschten Konsistenz einkochen lassen.
 
 8. Fertig
+
+*Lasst's euch schmecken!*
+
+include::einheiten.adoc[Maßeinheiten]
