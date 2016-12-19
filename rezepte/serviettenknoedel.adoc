@@ -1,6 +1,6 @@
 = Serviettenknödel
 :author: Markus Napp
-:email: markus.napp@gmail.com
+:email: mail@markus-napp.de
 :revnumber: 1.0
 :revdate: 13/12/2016
 :imagesdir: images
@@ -91,5 +91,3 @@ TIP: Küchenhandtücher sind meistens rechteckig. Das Handtuch mit den langen Ka
 TIP: Sollte etwas übrig bleiben, kann man die Knödelscheiben auch prima mit ein paar Speckwürfeln anbraten und dann mit Ei zu einem tollen Omelett verarbeiten. Auch allein in etwas Butterschmalz gebraten schmecken die übrig gebliebenen Knödel zu fast allem.
 
 *Lasst's euch schmecken!*
-
-include::einheiten.adoc[Maßeinheiten]
