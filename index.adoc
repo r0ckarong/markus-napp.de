@@ -2,7 +2,7 @@
 :author: Markus Napp
 :email: mail@markus-napp.de
 :toc-title: Inhalte
-:stylesheet: plain.css
+:stylesheet: monospace.css
 
 <<<
 
