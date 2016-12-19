@@ -1,0 +1,94 @@
+= Serviettenknödel
+:author: Markus Napp
+:email: markus.napp@gmail.com
+:revnumber: 1.0
+:revdate: 13/12/2016
+:imagesdir: images
+:toc-title: Inhalt
+:icons: font
+
+<<<
+
+++++
+<script src="https://use.fontawesome.com/96d0595752.js"></script>
+++++
+
+image::serviettenknoedel.jpg[Serviettenknödel]
+
+== Zutaten
+
+NOTE: Dieses Rezept ist meine Adaption von link:http://www.chefkoch.de/rezepte/125671053846944/Serviettenknoedel.html[diesem Rezept].
+
+NOTE: Ergibt im Küchenhandtuch eingerollt einen (1) Serviettenknödel (ca. 3-4 Personen)
+
+[options="header",cols="25,75"]
+|===
+|Gewicht |Zutat
+|300 gr
+|Brot oder Brötchen
+
+|300 ml
+|Milch
+
+|3 große
+|Eier
+
+|40 g
+|Butter
+
+|1 mittelgroße
+|Zwiebel
+
+|8 EL
+|Petersilie (gehackt)
+
+|1 1/2 TL
+|Salz
+
+|1 TL
+|Weisser Pfeffer
+
+|1/2 TL
+|Muskatnuss (gerieben)
+|===
+
+TIP: Wer nicht viel Geld für die Brötchen ausgeben und sie "trocknen" lassen will kann einfach Aufbackbrötchen vom Discounter nehmen. Sechs Stück in einer Packung passen genau auf dieses Rezept. Gemischt mit Vollkornbrötchen schmeckt es noch besser. Einfach nach Packungsangabe zubereiten und dann den Ofen ausschalten und die Brötchen darin liegen lassen. Dann werden diese innerhalb von ca. 30-45 Minuten genau so trocken wie man sie für so ein Rezept braucht.
+
+== Zubereitung
+
+. Die Brötchen/das Brot in ca. 2 cm große Würfel schneiden.
+. Die Zwiebel fein würfeln und in der Butter in einer Pfanne glasig anschwitzen und leicht anrösten
+. Die Eier trennen. Eiweiss *nicht* entsorgen! Besonders darauf achten dass kein Eigelb in das Eiweiss gelangt (Sonst wird der Eischnee später sehr schwierig).
+. Petersilie fein hacken.
+
+TIP: Es bietet sich an, Tiefkühl-Petersilie aus dem Handel zu nehmen da dieser schön fein verarbeitet ist und genug Zeit hat um in der Mischung aufzutauen. Es spart *viel* Schweinerei und Arbeit. Perfektionisten dürfen _natürlich_ gerne selbst hacken.
+
+[start=5]
+. Milch, Eigelb, Petersilie, Salz, Pfeffer, Muskat und die angebratenen Zwiebeln (mit dem Fett zusammen) über die Brotwürfel gießen.
+. Alles kräftig vermischen. Zu große Brotwürfel mit den Händen zerdrücken und alles so vermengen dass das gesamte Brot von der Flüssigkeit benetzt ist.
+. Die Brotmasse _mindestens_ 20 Minuten einweichen lassen damit sie ordentlich quellen/einweichen kann.
+. Nachdem die Wartezeit abgelaufen ist, das aufbewahrte Eiweiss zu Eischnee schlagen.
+
+TIP: Der Eischnee ist erst dann korrekt wenn sich kleine "Gipfel" bilden lassen. link:https://www.youtube.com/watch?v=QI3BdtQ8y8w[Hier] wird das schön erklärt. Man braucht dafür nicht zwingend eine Küchenmaschine oder einen Mixer das geht auch in ein paar Minuten Muskelarbeit prima mit dem *Schnee*-besen.
+
+[start=9]
+. Vorsichtig den Eischnee unter die Brotmasse heben, nicht zu viel rühren denn sonst zerfällt der Schnee und der fluffige Effekt ist dahin. Die Knödel werden bestimmt trotzdem lecker aber wahrscheinlich zu "dicht".
+. Die Masse wird durch das Unterheben deutlich lockerer und man sollte kaum noch etwas vom Eischnee sehen.
+. Die ganze Masse auf ein sauberes Küchenhandtuch aus Stoff geben und grob zu einer "Wurst" formen. Darauf achten dass an jedem Ende der Masse noch mindestens ein paar Centimeter Platz zum Rand des Tuches vorhanden sind damit man es nachher zubinden kann.
+
+TIP: Küchenhandtücher sind meistens rechteckig. Das Handtuch mit den langen Kanten Horizontal (seitwärts) vor sich ausbreiten und sich (je nach Lieblingsseite/-hand) ein Drittel des Tuchs aussuchen. Wenn man die Masse dann "am Ende" von diesem letzten Drittel ausbreitet und zur Wurst formt muss man zum einen nicht so viel Tuch bei der ersten "Rolle" einschlagen und hat dann noch mehr Material übrig die das Ganze zusammen hält.
+
+[start=12]
+. Das kleinere Stück vom Tuch über die Masse schlagen und dann fest einrollen. Die Masse muss beim einrollen zusammen gepresst werden damit der Knödel später nicht auseinander fällt. Das ganze einrollen bis man eine ordentliche Form erreicht hat.
+. Die Enden verdrillen (wie beim Bonbonpapier zudrehen) und mit Küchengarn oder einer anderen sauberen Schnur zubinden. Darauf achten dass der Knoten wirklich hält (am besten Doppelknoten).
+. Einen breiten Topf (am besten funktionieren Bräter) mit Wasser zum kochen bringen. Das Wasser salzen (wie wenn man normale Knödel oder Pasta kocht). Wer keinen Bräter hat sollte in Schritt *11* mehrere Tücher verwenden und die Masse aufteilen so dass sie in den Topf passt.
+. Wenn das Wasser kocht, die Hitze auf die Hälfte runter drehen dass das Wasser maximal vor sich hin köchelt. (Elektroherd ca. Stufe 4-5).
+. Den Knödel 25-30 Minuten so ziehen lassen.
+. Nach Ablauf der Zeit den Knödel aus dem Wasser fischen und unter kalten Wasser ca. 30 Sekunden von allen Seiten abschrecken. Das trägt dazu bei dass man den Knödel besser vom Tuch lösen kann und vor allem dass er nicht mehr so heiss ist wenn man ihn portionieren möchte.
+. Anschließend die Knödelrolle in ca. 2-3 cm dicke Scheiben (oder nach Geschmack) tranchieren und servieren.
+
+TIP: Sollte etwas übrig bleiben, kann man die Knödelscheiben auch prima mit ein paar Speckwürfeln anbraten und dann mit Ei zu einem tollen Omelett verarbeiten. Auch allein in etwas Butterschmalz gebraten schmecken die übrig gebliebenen Knödel zu fast allem.
+
+*Lasst's euch schmecken!*
+
+include::einheiten.adoc[Maßeinheiten]
