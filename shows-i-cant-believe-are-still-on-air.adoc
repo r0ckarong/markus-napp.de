@@ -3,7 +3,7 @@
 :email: mail@markus-napp.de
 :revnumber: 2.0
 :revdate: 19/12/2016
-:stylesheet: monospace.css
+:stylesheet: boot-spacelab.css
 
 Because they are or have become shit
 

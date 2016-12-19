@@ -6,7 +6,7 @@
 :imagesdir: images
 :toc-title: Inhalt
 :icons: font
-:stylesheet: ../monospace.css
+:stylesheet: ../boot-spacelab.css
 
 <<<
 
