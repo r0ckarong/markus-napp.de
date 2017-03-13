@@ -1,0 +1,33 @@
+= How to build a custom "Improve this Content" button
+
+Inspired by this blog post: http://ben.balter.com/2015/09/13/github-pages-edit-button/
+
+I wanted to build a button for our company documentation project.
+Since the pages are process with AsciiBinder and have a slightly less intuitive structure than the GitHub pages model I needed to write some JavaScript to actually find the correct branch and URL to forward to.
+
+The script I ended up building is this:
+
+[source,javascript]
+----
+jQuery(document).ready(function($){ # <1>
+
+  what = window.location.href.split(':'); # <2>
+  a = document.getElementById('improve'); # <3>
+
+  if (what[0] == "file") # <4>
+   {
+     a.href = "https://github.com/arago/hiro-documentation/"
+   } else { # <5>
+       branch = "/" + window.location.href.split(window.location.host)[1].split('/')[2] + "/"
+       file = window.location.href.split(window.location.host)[1].split('/').slice(3).join('/')
+       url = file.substring(file.length -5,0) + ".adoc"
+       a.href = "https://github.com/arago/hiro-documentation/edit" + branch + url # <6>
+     };
+});
+----
+<1> Run once document is loaded
+<2> Find out the location
+<3> Find the anchor/button element to replace
+<4> Check if it's local, if so insert a default link
+<5> Otherwise split the location into sections, find the branch and file name, truncate the .html ending, add .adoc ending
+<6> Assemble into full URL and insert into "href" element of the selected anchor
