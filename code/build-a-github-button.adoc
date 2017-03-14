@@ -2,6 +2,9 @@
 
 Inspired by this blog post: http://ben.balter.com/2015/09/13/github-pages-edit-button/
 
+* CSS to put a GitHub logo before the text (FontAwesome)
+* Rewrite URL depending on type of hosting (local or on server)
+
 I wanted to build a button for our company documentation project.
 Since the pages are process with AsciiBinder and have a slightly less intuitive structure than the GitHub pages model I needed to write some JavaScript to actually find the correct branch and URL to forward to.
 
@@ -31,3 +34,50 @@ jQuery(document).ready(function($){ # <1>
 <4> Check if it's local, if so insert a default link
 <5> Otherwise split the location into sections, find the branch and file name, truncate the .html ending, add .adoc ending
 <6> Assemble into full URL and insert into "href" element of the selected anchor
+
+
+== Add login detection
+
+* https://github.com/pingidentity/mod_auth_openidc/wiki
+* Detect if user can access members only website via XHMLHttpRequest
+* Modify button state via JavaScript (Boostrap collapse)
+
+
+[source,javascript]
+----
+jQuery(document).ready(function($){
+
+  what = window.location.href.split(':');
+  a = document.getElementById('improve-button');
+
+  if (what[0] != "file")
+   {
+     xhr = new XMLHttpRequest();
+     xhr.onreadystatechange = function() {
+         if (xhr.readyState == XMLHttpRequest.DONE) {
+           if (xhr.status == "200") {
+             console.log("Status 200 received, arago Member");
+             div = document.getElementById('improve');
+             branch = "/" + window.location.href.split(window.location.host)[1].split('/')[2] + "/"
+             file = window.location.href.split(window.location.host)[1].split('/').slice(3).join('/')
+             url = file.substring(file.length -5,0) + ".adoc"
+             a.href = "https://github.com/arago/hiro-documentation/edit" + branch + url
+             div.className += " in"
+           }
+           else {
+             console.log("Status not 200, not arago Member");
+             return false;
+           }
+         }
+     }
+   }
+   else {
+     console.log("Files rendered locally. Doing nothing.")
+     return false;
+   }
+
+  xhr.open('GET', 'https://docs.hiro.arago.co/hiro/develop/welcome/index.html', true);
+  xhr.send(null);
+
+});
+----
