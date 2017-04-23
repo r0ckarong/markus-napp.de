@@ -28,4 +28,4 @@
 * link:bands.html[Bands I like]
 * link:shows-i-cant-believe-are-still-on-air.html[Shows I can't believe are still on air]
 * link:ben-stiller.html[Ben Stiller]
-* link:fake-viral-tussis.html[V wie Vick dich Viral - Wie sich Künstler mit Fake Viral Clicks ergaunern]
+* link:blog/fake-viral-tussis.html[V wie Vick dich Viral - Wie sich Künstler mit Fake Viral Clicks ergaunern]
