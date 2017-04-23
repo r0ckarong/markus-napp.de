@@ -1,6 +1,12 @@
 = Install qBittorrent-nox Daemon on Ubuntu
-
-
+:author: Markus Napp
+:email: mail@markus-napp.de
+:imagesdir: images
+:toc-title: Inhalt
+:icons: font
+:revnumber: 1.0
+:revdate: 23.04.2017
+:stylesheet: ../boot-spacelab.css
 
 == Install Dependencies
 * Get link:https://github.com/arvidn/libtorrent[Libtorrent Rasterbar sources] (1.0.x)
