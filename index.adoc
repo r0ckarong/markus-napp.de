@@ -15,6 +15,7 @@
 == Programming
 
 * link:code/build-a-github-button.html[Adding a "Improve This"-Button to documentation]
+* link:code/compile-qbittorrent-nox-daemon.html[Install qBittorrent-nox daemon on Ubuntu]
 
 == Rezepte
 
@@ -27,3 +28,4 @@
 * link:bands.html[Bands I like]
 * link:shows-i-cant-believe-are-still-on-air.html[Shows I can't believe are still on air]
 * link:ben-stiller.html[Ben Stiller]
+* link:fake-viral-tussis.html[V wie Vick dich Viral - Wie sich Künstler mit Fake Viral Clicks ergaunern]

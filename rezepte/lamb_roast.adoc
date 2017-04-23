@@ -1,0 +1,108 @@
+= Lammkeule Marokkanisch mit Safranreis (Ostern)
+:author: Markus Napp
+:email: mail@markus-napp.de
+:revnumber: 1.0
+:revdate: 13/04/2016
+:imagesdir: images
+:toc-title: Inhalt
+:icons: font
+:stylesheet: ../boot-spacelab.css
+
+<<<
+
+++++
+<script src="https://use.fontawesome.com/96d0595752.js"></script>
+++++
+
+== Zutaten
+
+[options="header",cols="25,75"]
+|===
+|Gewicht |Zutat
+
+|===
+
+Große Ofenform (40x32)
+Gitter für Ofenform
+
+
+== Lamm
+Lammkeule mit Knochen (Butterfly)
+
+Olivenöl
+4 mittlere Zwiebeln
+4 Zehen Knoblauch
+4 große Karotten
+1 TL Honig
+Champignons
+200g Datteln entsteint
+1 Dose Kichererbsen
+
+Ras El Hanout
+Harissa
+Thymian
+Petersilie (getrocknet)
+Knoblauchpulver
+
+== Füllung
+Datteln
+Zwiebeln
+getrocknete Tomaten
+Salz
+Kräuter
+Honig
+
+Datteln würfeln
+Zwiebel würfeln
+Tomaten würfeln
+Olivenöl
+Mit Honig, Kräuter, Salz und Olivenöl vermischen
+
+== Reis
+[options="header",cols="25,75"]
+|===
+|2 Tassen
+|Basmati Reis
+
+|2 Prisen
+|Salz
+|===
+
+Reis waschen
+Reis in genug Salzwasser zu 90% kochen, abgießen.
+
+Dann bei niedriger Hitze 1 Stunde dämpfen
+1/3 vom Reis entnehmen und mit Safran-Wasser mischen
+Reis servieren
+
+=== Safran Wasser
+
+[options="header",cols="25,75"]
+|===
+|Gewicht |Zutat
+|1 Prise
+|Safranfäden
+
+|1 Prise
+|(Weisser) Zucker
+
+|200 ml
+|Wasser (heiss)
+|===
+
+1 Prise Safran und 1 Prise weissen Zucker im Mörser zu einem feinen Pulver zerstoßen. Mit heißen Wasser aufgießen und in ein Gefäß abfüllen (am besten eine Flasche).
+
+== Rezept
+
+== Zubereitung
+
+Lammkeule ausbeinen
+Gewürze mischen
+Keule mit Gewürzen von beiden Seiten einreiben
+Ofen auf 180° vorheizen
+Lammkeule mit Füllung befüllen und mit Küchengarn zubinden
+Lammkeule in der Form von allen Seiten scharf anbraten
+Zwiebel, Knoblauch, Tomate, Pilze, Datteln
+
+
+*Lasst's euch schmecken!*

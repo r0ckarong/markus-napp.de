@@ -1,0 +1,102 @@
+= Install qBittorrent-nox Daemon on Ubuntu
+
+
+
+== Install Dependencies
+* Get link:https://github.com/arvidn/libtorrent[Libtorrent Rasterbar sources] (1.0.x)
+* Get link:https://github.com/qbittorrent/qBittorrent/releases[qBittorrent sources] (3.3.x)
+* Install OS build tools and deps
++
+----
+sudo apt-get build-essential install libboost-dev libboost-system-dev build-essential qtbase5-dev qttools5-dev-tools python
+geoip-database libgeoip-dev libboost-system-dev libboost-chrono-dev libboost-random-dev libssl-dev git pkg-config automake libtool
+----
+
+== Compile libtorrent-rasterbar
+
+* Configure project
++
+----
+./configure --disable-debug --enable-encryption --prefix=/usr --with-libgeoip=system CXXFLAGS=-std=c++11
+----
+* Compile and install
++
+----
+make clean
+make
+sudo make install
+----
+
+After librasterbar is finished and installed you can start with compiling qbittorrent-nox
+
+== Compile qBittorrent
+
+ ./configure --prefix=/usr --disable-gui
+make
+sudo make install
+
+== Set up daemon service
+
+=== Start qBittorrent once to create the config directory
+
+----
+qbittorrent-nox
+----
+
+=== Install service file for systemd
+
+Create a file:
+
+./etc/systemd/system/qbittorrent.service
+[source]
+----
+[Unit]
+Description=qBittorrent Daemon Service
+After=network.target
+
+[Service]
+Type=forking
+User=maggus
+ExecStart=/usr/bin/qbittorrent-nox -d
+
+[Install]
+WantedBy=multi-user.target
+----
+
+Then run
+----
+sudo systemctl daemon-reload
+sudo systemctl start qbittorrent.service
+----
+
+TIP: You can create the service file in a Dropbox and then link the file into the respective directory to migrate it to other machines with the same installation or for easy backup.
+
+== Install Torrent Filetype handler
+
+To make life easier with using qBittorrent-nox and the Webui you can define a handler for the torrent files. Create a new file:
+
+.qbittorrent-nox-add.desktop
+[source]
+----
+[Desktop Entry]
+Version=3.3.12
+Type=Application
+Encoding=UTF-8
+Name=qBittorrent-nox
+Comment=Headless qBittorrent
+Exec=qbittorrent-nox --webui-port=8112 %F %U
+Mimetype=application/x-bittorrent;x-scheme-handler/magnet;
+Terminal=true
+----
+
+Copy this file to `~/.local/share/applications/`. This shortcut enables you to add local and remote torrent files as well as magnet links from websites to your qBittorrent session by clicking them.
+
+NOTE: A terminal will pop up shortly because the option `Terminal=true` is set. This can serve as an indicator that something has actually happened. If you find this annoying simply set `Terminal=false`.
+
+
+== Sources
+[[bibliography]]
+* https://github.com/qbittorrent/qBittorrent/wiki/Compiling-qBittorrent-on-Debian-and-Ubuntu
+* https://github.com/qbittorrent/qBittorrent/wiki/Running-qBittorrent-without-X-server
+* https://github.com/qbittorrent/qBittorrent/wiki/Setting-up-qBittorrent-on-Ubuntu-server-as-daemon-with-Web-interface-(15.04-and-newer)
+* https://askubuntu.com/questions/122930/how-can-i-make-firefox-open-magnet-links-in-transmission
