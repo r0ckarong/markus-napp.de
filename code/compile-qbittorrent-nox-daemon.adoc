@@ -79,9 +79,11 @@ TIP: You can create the service file in a Dropbox and then link the file into th
 
 == Install Torrent Filetype handler
 
-To make life easier with using qBittorrent-nox and the Webui you can define a handler for the torrent files. Create a new file:
+IMPORTANT: Make sure you update the mime type definitions of `gvfs-open` and `xdg-open` after adding the
 
-.qbittorrent-nox-add.desktop
+To make life easier with using qBittorrent-nox and the Webui you can define a handlers for the torrent files and magnet links. Create new files:
+
+.qbittorrent-nox-add-file.desktop
 [source]
 ----
 [Desktop Entry]
@@ -91,13 +93,41 @@ Encoding=UTF-8
 Name=qBittorrent-nox
 Comment=Headless qBittorrent
 Exec=qbittorrent-nox --webui-port=8112 %F %U
-Mimetype=application/x-bittorrent;x-scheme-handler/magnet;
+Mimetype=application/x-bittorrent;
 Terminal=true
 ----
 
-Copy this file to `~/.local/share/applications/`. This shortcut enables you to add local and remote torrent files as well as magnet links from websites to your qBittorrent session by clicking them.
+.qbittorrent-nox-add-link.desktop
+[source]
+----
+[Desktop Entry]
+Version=3.3.12
+Type=Application
+Encoding=UTF-8
+Name=qBittorrent-nox
+Comment=Headless qBittorrent
+Exec=qbittorrent-nox --webui-port=8112 %U
+Mimetype=x-scheme-handler/magnet;
+Terminal=true
+----
+
+Create symlinks to these files in "/usr/share/applications"
 
 NOTE: A terminal will pop up shortly because the option `Terminal=true` is set. This can serve as an indicator that something has actually happened. If you find this annoying simply set `Terminal=false`.
+
+=== Update Mime type
+
+.GNOME
+----
+gvfs-mime --set application/x-bittorrent qbittorrent-nox-add-file.desktop
+gvfs-mime --set x-scheme-handler/magnet qbittorrent-nox-add-link.desktop
+----
+
+.XDG
+----
+xdg-mime default qbittorrent-nox-add-link.desktop x-scheme-handler/magnet
+xdg-mime default qbittorrent-nox-add-file.desktop application/x-bittorrent
+----
 
 
 == Sources
