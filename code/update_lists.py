@@ -40,9 +40,9 @@ auditlog = ["auditlog",
 
 typelist = [whitelist, blacklist, wildcard, auditlog]
 
-listcount=len(typelist)
+listcount = len(typelist)
 
-count=0
+count = 0
 
 while count < listcount:
     listfile = subprocess.Popen(['gist', '-r', typelist[count][1]], bufsize=2,
@@ -59,11 +59,12 @@ while count < listcount:
     filename = "/tmp/" + typelist[count][0] + ".diff"
     print "Filename is " + filename
 
-    diff = subprocess.Popen(['diff',filename,typelist[count][2]], bufsize=2, stdout=subprocess.PIPE)
+    diff = subprocess.Popen(['diff', filename, typelist[count][2]], bufsize=2, stdout=subprocess.PIPE)
     diffy = open(filename, 'w')
-    for diffline in iter(diff.stdout.readline, ''):
-        print diffline
-        diffy.write(diffline)
+
+    for line in iter(diff.stdout.readline, ''):
+        print line
+        diffy.write(line)
 
     diffy.close()
 

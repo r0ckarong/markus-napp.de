@@ -1,0 +1,13 @@
+Weird Key layout
+Mixture of 87 ANSI and 88 ISO, has 88 keys but is NOT an ISO layout.
+It has a long left Shift and a Backslash/Large ISO Enter
+Weird stabilizers
+Springs under the Space bar
+Blue imitation switches
+Feel very clicky like the real Cherry MX
+One LED for CAPS indicator above the arrow keys
+keycaps have a longer stem, normal caps will bottom out on the sides on press
+incredibly cheap
+Solid long USB cable
+Shipping around 2 weeks from China
+Media keys on F1-F8
