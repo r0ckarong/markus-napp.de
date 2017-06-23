@@ -1,0 +1,15 @@
+Needs python libs
+
+python dev
+urllib
+urllib2
+vcgendcmd
+time
+math
+datetime
+envirophat
+
+Based on
+
+Raspberry Pi Zero W
+Pimoroni enviropHAT

@@ -2,8 +2,7 @@ import time
 import math
 import vcgencmd
 from datetime import datetime
-from envirophat import light, motion, weather, leds
-
+from envirophat import light, weather, leds
 
 out = open('enviro.log', 'w')
 #out.write('time\tlight\trgb\tmotion\theading\ttemp\tpress\n')
@@ -16,8 +15,6 @@ try:
         leds.on()
         rgb = str(light.rgb())[1:-1].replace(' ', '')
         leds.off()
-        acc = str(motion.accelerometer())[1:-1].replace(' ', '')
-        heading = motion.heading()
         cpu_temp = vcgencmd.measure_temp()
         temp = weather.temperature() - 5.8
         raw = weather.temperature()
