@@ -1,8 +1,7 @@
 Needs python libs
 
 python dev
-urllib
-urllib2
+requests
 vcgendcmd
 time
 math
@@ -13,3 +12,12 @@ Based on
 
 Raspberry Pi Zero W
 Pimoroni enviropHAT
+
+
+TODO
+
+build data collection script
+store in JSON
+read averages and calculate thresholds
+define limits when to send message
+figure out how to deploy webhook variable in screen
