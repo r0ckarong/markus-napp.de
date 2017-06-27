@@ -1,0 +1,6 @@
+= Lessons in using a USB-C MacBook
+
+* Get a all in one hub for your main workstations. Ethernet, USB 3, HDMI.
+* Get a second charger
+* Buy a cable for the second charger (yes they don't ship one ... bastards)
+* When using an all in one hub on a flat battery your laptop might not receive enough power to boot up. Plug in the charger directly.

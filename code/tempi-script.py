@@ -11,10 +11,10 @@ from envirophat import light, weather, leds
 hook = os.environ["SLACK_WEBHOOK"]
 
 out = open('enviro.log', 'w')
-#out.write('time\tlight\trgb\tmotion\theading\ttemp\tpress\n')
-out.write('Time\tTemp (Sensor)\tTemp (Calculated)\tTemp (Rounded)\tCPU Temp\tLight\n')
+# out.write('Time\tTemp (Sensor)\tTemp (Calculated)\tTemp (Rounded)\tCPU Temp\tLight\n')
+out.write('Time\tTemp (Sensor)\tTemp (Calibrated)\tCPU Temp\n')
 
-factor = 0.819602564265192
+factor = 0.882461847
 
 try:
     while True:
@@ -25,14 +25,13 @@ try:
         temp = weather.temperature()
         temp_calibrated = temp - ((cpu_temp - temp)/factor)
         tempmed = '{:.1f}'.format(round(temp_calibrated, 2))
-        #tempmed = 0.5 * math.ceil(2.0 * weather.temperature())
-        press = weather.pressure()
-        #out.write('%s\t%f\t%s\t%s\t%f\t%f\t%f\n' % (currtime, lux, rgb, acc, heading, temp, press))
-        out.write('%s\t%f\t%f\t%s\t%f\t%s\n' % (currtime, temp, temp_calibrated, tempmed, cpu_temp, lux))
+        # out.write('%s\t%f\t%f\t%s\t%f\t%s\n' % (currtime, temp, temp_calibrated, tempmed, cpu_temp, lux))
+        # out.write('%s\t%f\t%f\n' % (currtime, temp, cpu_temp))
+        out.write('%s\t%f\t%f\t%f\n' % (currtime, temp, temp_calibrated, cpu_temp))
         out.flush()
         message = "It is " + str(currtime) + "\nThe current temperature is " + str(tempmed) + " measuring " + str(lux) + " lux of light"
         payload = {'text':message}
-        #r = requests.post(hook, json=payload)
+        # r = requests.post(hook, json=payload)
         leds.off()
         time.sleep(60)
 
