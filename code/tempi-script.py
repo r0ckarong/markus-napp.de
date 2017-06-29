@@ -15,7 +15,7 @@ tempmed = 0
 temp_calibrated = 0
 cpu_temp = 0
 
-factor = 0.88264185
+factor = 0.868218182
 # factor = 1.11753815
 
 out = open('enviro.log', 'w')
