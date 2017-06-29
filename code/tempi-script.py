@@ -10,30 +10,43 @@ from envirophat import light, weather, leds
 
 hook = os.environ["SLACK_WEBHOOK"]
 
-out = open('enviro.log', 'w')
-# out.write('Time\tTemp (Sensor)\tTemp (Calculated)\tTemp (Rounded)\tCPU Temp\tLight\n')
-out.write('Time\tTemp (Sensor)\tTemp (Calibrated)\tCPU Temp\n')
+temp = 0
+tempmed = 0
+temp_calibrated = 0
+cpu_temp = 0
 
-factor = 0.882461847
+factor = 1.11753815
+
+out = open('enviro.log', 'w')
+out.write('Time\tTemp (Sensor)\tTemp (Calibrated)\tTemp (Rounded)\tCPU Temp\n')
+
+
+def send_message():
+    payload = {'text':message}
+    r = requests.post(hook, json=payload)
+
+def get_temps():
+    global cpu_temp
+    cpu_temp = vcgencmd.measure_temp()
+    global temp
+    temp = weather.temperature()
+    global temp_calibrated
+    temp_calibrated = temp - ((cpu_temp - temp)/factor)
+    global tempmed
+    tempmed = '{:.1f}'.format(round(temp_calibrated, 2))
 
 try:
     while True:
         leds.on()
         currtime = datetime.now().strftime('%H:%M:%S')
         lux = light.light()
-        cpu_temp = vcgencmd.measure_temp()
-        temp = weather.temperature()
-        temp_calibrated = temp - ((cpu_temp - temp)/factor)
-        tempmed = '{:.1f}'.format(round(temp_calibrated, 2))
-        # out.write('%s\t%f\t%f\t%s\t%f\t%s\n' % (currtime, temp, temp_calibrated, tempmed, cpu_temp, lux))
-        # out.write('%s\t%f\t%f\n' % (currtime, temp, cpu_temp))
-        out.write('%s\t%f\t%f\t%f\n' % (currtime, temp, temp_calibrated, cpu_temp))
-        out.flush()
+        get_temps()
+        out.write('%s\t%f\t%f\t%s\t%f\n' % (currtime, temp, temp_calibrated, tempmed, cpu_temp))
         message = "It is " + str(currtime) + "\nThe current temperature is " + str(tempmed) + " measuring " + str(lux) + " lux of light"
-        payload = {'text':message}
-        # r = requests.post(hook, json=payload)
+        send_message()
+        out.flush()
         leds.off()
-        time.sleep(60)
+        time.sleep(30)
 
 except KeyboardInterrupt:
     leds.off()
