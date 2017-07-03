@@ -14,19 +14,6 @@ Raspberry Pi Zero W
 Pimoroni enviropHAT
 
 
-TODO
-
-build data collection script
-store in JSON
-read averages and calculate thresholds
-define limits when to send message
-figure out how to deploy webhook variable in screen
-
-solve for measured temperature to get factor
-average factors from multiple measuring points
-substract factor from 2
-final factor works in the +/- 0.8 degree range off the real temp
-
 
 Wolfram Alpha Solve for Temp
 
@@ -35,3 +22,13 @@ y = Measured Temp
 z = cpu temp
 
 x = 32.434425, y = 27.0, z =  36.300000, y = x - ((z - x)/a)
+
+
+
+TODO
+
+build data collection script
+store in JSON
+read averages and calculate thresholds
+define limits when to send message
+figure out how to deploy webhook variable in screen
