@@ -32,3 +32,4 @@ store in JSON
 read averages and calculate thresholds
 define limits when to send message
 figure out how to deploy webhook variable in screen
+send weather report at 0800 1200 1600 2200 0400

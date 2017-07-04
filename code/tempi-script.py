@@ -67,11 +67,33 @@ def send_message():
 
     message = post % (mytime, zip_code, outside_location, outside_condition, out_temp, med)
 
+    # print message
+
     payload = {'text':message}
     requests.post(slack_webhook, json=payload)
 
 def write_file():
     out.write('%s\t%f\t%f\t%s\t%f\n' % (currtime, temp, temp_calibrated, tempmed, cpu_temp))
+
+def write_json():
+    global outside_temp
+    global outside_condition
+    global outside_location
+    global tempmed
+    global currtime
+    date = datetime.now().strftime('%d-%m-%Y')
+
+    json_file = open('weather.json', 'a')
+    data = {
+    'temperature':tempmed,
+    'outside_temp':outside_temp,
+    'outside_condition':outside_condition,
+    'outside_location':outside_location,
+    'time':currtime,
+    'date':date
+    }
+    json.dump(data, json_file, indent=4)
+    json_file.flush()
 
 try:
     while True:
@@ -82,11 +104,12 @@ try:
         get_outside()
         get_temps()
         write_file()
-        send_message()
+        # write_json()
+        # send_message()
         out.flush()
         leds.off()
 
-        time.sleep(15)
+        time.sleep(30)
 
 except KeyboardInterrupt:
     leds.off()
