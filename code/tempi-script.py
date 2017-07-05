@@ -83,7 +83,8 @@ def write_json():
     global currtime
     date = datetime.now().strftime('%d-%m-%Y')
 
-    json_file = open('weather.json', 'a')
+    json_file = open('weather.json', 'w')
+    weather = [json_file]
     data = {
     'temperature':tempmed,
     'outside_temp':outside_temp,
@@ -92,22 +93,25 @@ def write_json():
     'time':currtime,
     'date':date
     }
-    json.dump(data, json_file, indent=4)
+    json_file.append(data)
+    #json.dump(data, json_file, indent=4)
     json_file.flush()
+
+def perform_update():
+    currtime = datetime.now().strftime('%H:%M:%S')
+    lux = light.light()
+    leds.on()
+    get_outside()
+    get_temps()
+    write_file()
+    # write_json()
+    # send_message()
+    out.flush()
+    leds.off()
 
 try:
     while True:
-        currtime = datetime.now().strftime('%H:%M:%S')
-        lux = light.light()
-
-        leds.on()
-        get_outside()
-        get_temps()
-        write_file()
-        # write_json()
-        # send_message()
-        out.flush()
-        leds.off()
+        perform_update()
 
         time.sleep(30)
 

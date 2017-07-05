@@ -29,6 +29,8 @@ TODO
 
 build data collection script
 store in JSON
+read every 30 sec
+every 15mins write to file and create average
 read averages and calculate thresholds
 define limits when to send message
 figure out how to deploy webhook variable in screen
