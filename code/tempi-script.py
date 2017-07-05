@@ -98,6 +98,7 @@ def write_json():
     json_file.flush()
 
 def perform_update():
+    global currtime
     currtime = datetime.now().strftime('%H:%M:%S')
     lux = light.light()
     leds.on()
