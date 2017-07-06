@@ -2,17 +2,19 @@ Needs python libs
 
 python dev
 requests
-vcgendcmd
+vcgencmd
 time
 math
 datetime
 envirophat
+schedule
 
 Based on
 
 Raspberry Pi Zero W
 Pimoroni enviropHAT
 
+pip install schedule vcgendcmd requests pyowm
 
 
 Wolfram Alpha Solve for Temp
@@ -26,12 +28,17 @@ x = 32.434425, y = 27.0, z =  36.300000, y = x - ((z - x)/a)
 
 
 TODO
-
+====
 build data collection script
 store in JSON
-read every 30 sec
 every 15mins write to file and create average
 read averages and calculate thresholds
 define limits when to send message
-figure out how to deploy webhook variable in screen
-send weather report at 0800 1200 1600 2200 0400
+map OWM weather ids/descriptions to Slack emoji
+figure out how to deploy webhook variable in screen session
+
+
+DONE
+====
+read every 30 sec
+send weather report at 0800 1200
