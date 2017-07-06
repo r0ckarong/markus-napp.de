@@ -38,15 +38,13 @@ out = open('enviro.log', 'w')
 out.write('Time\tTemp (Sensor)\tTemp (Calibrated)\tTemp (Rounded)\tCPU Temp\n')
 
 def get_condition():
-    """
-    TODO
+    """TODO
 
     Reads current condition and maps emoji and icons to the message which is to be sent to Slack.
     """
 
 def get_outside():
-    """
-    Polls the weather data from openweathermap API and returns values for global usage.
+    """Polls the weather data from openweathermap API and returns values for global usage.
 
     Will be refactored to use pyowm instead of requests.
     """
@@ -78,8 +76,7 @@ def send_message():
     out_temp = str(outside_temp)
     med = str(tempmed)
 
-    post = """It is currently %s in %s, %s\nOutside there is "%s" at %s C\nInside the office we have a temperature of %s C
-    """
+    post = """It is currently %s in %s, %s\nOutside there is "%s" at %s \xb0C\nInside the office we have a temperature of %s \xb0C"""
 
     message = post % (mytime, zip_code, outside_location, outside_condition, out_temp, med)
 
@@ -124,6 +121,7 @@ def perform_update():
 # Schedule messages
 schedule.every().day.at("08:00").do(send_message)
 schedule.every().day.at("12:00").do(send_message)
+# schedule.every().hour.at(":15").do(send_message)
 
 try:
     while True:
