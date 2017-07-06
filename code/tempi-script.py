@@ -4,7 +4,9 @@ import vcgencmd
 import os
 import json
 import requests
+import pyowm
 import schedule
+
 
 from datetime import datetime
 from envirophat import light, weather, leds
@@ -26,9 +28,11 @@ slack_webhook = os.environ["SLACK_WEBHOOK"]
 
 # Data for Openweathermap Query
 owm_key = os.environ["OWM_KEY"]
+owm = pyowm.OWM(owm_key)
+
 zip_code = "60433"
 country_code = "de"
-unit = "metric"
+unit = "celsius"
 
 # Sensor offset factor
 factor = 0.868218182
@@ -42,6 +46,8 @@ def get_condition():
 
     Reads current condition and maps emoji and icons to the message which is to be sent to Slack.
     """
+    get_detailed_status()
+    get_weather_code()
 
 def get_outside():
     """Polls the weather data from openweathermap API and returns values for global usage.
@@ -52,12 +58,10 @@ def get_outside():
     global outside_condition
     global outside_location
 
-    owm_api = "http://api.openweathermap.org/data/2.5/weather?zip=" + zip_code + "," + country_code + "&units=" + unit + "&appid=" + owm_key
-
-    outside = json.loads(requests.get(owm_api).text)
-    outside_temp = outside['main']['temp']
-    outside_condition = outside['weather'][0]['description']
-    outside_location = outside['name']
+    observation = owm.weather_at_zip_code(zip_code,country_code)
+    w = observation.get_weather()
+    outside_temp = w.get_temperature(unit)['temp']
+    outside_condition = w.get_detailed_status().title().encode()
 
 def get_temps():
     global cpu_temp
@@ -76,9 +80,9 @@ def send_message():
     out_temp = str(outside_temp)
     med = str(tempmed)
 
-    post = """It is currently %s in %s, %s\nOutside there is "%s" at %s \xb0C\nInside the office we have a temperature of %s \xb0C"""
+    post = """It is currently %s in %s, Frankfurt am Main\nOutside there is "%s" at %s \xb0C\nInside the office we have a temperature of %s \xb0C"""
 
-    message = post % (mytime, zip_code, outside_location, outside_condition, out_temp, med)
+    message = post % (mytime, zip_code, outside_condition, out_temp, med)
 
     # print message
 
@@ -119,9 +123,9 @@ def perform_update():
     leds.off()
 
 # Schedule messages
-schedule.every().day.at("08:00").do(send_message)
-schedule.every().day.at("12:00").do(send_message)
-# schedule.every().hour.at(":15").do(send_message)
+# schedule.every().day.at("08:00").do(send_message)
+# schedule.every().day.at("12:00").do(send_message)
+schedule.every().hour.at(":00").do(send_message)
 
 try:
     while True:
