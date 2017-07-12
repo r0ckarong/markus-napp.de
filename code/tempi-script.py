@@ -80,7 +80,7 @@ def send_message():
     out_temp = str(outside_temp)
     med = str(tempmed)
 
-    post = """It is currently %s in %s, Frankfurt am Main\nOutside there is "%s" at %s \xb0C\nInside the office we have a temperature of %s \xb0C"""
+    post = """It is currently %s in %s, Frankfurt am Main\nOutside there is "%s" at %s C\nInside the office we have a temperature of %s C"""
 
     message = post % (mytime, zip_code, outside_condition, out_temp, med)
 
@@ -125,13 +125,15 @@ def perform_update():
 # Schedule messages
 # schedule.every().day.at("08:00").do(send_message)
 # schedule.every().day.at("12:00").do(send_message)
-schedule.every().hour.at(":00").do(send_message)
+# schedule.every().hour.at(":00").do(send_message)
+
 
 try:
     while True:
         perform_update()
 
         schedule.run_pending()
+        send_message()
 
         time.sleep(30)
 
