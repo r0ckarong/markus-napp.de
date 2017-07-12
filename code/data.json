@@ -1,6 +1,0 @@
-{
-"time" : currtime,
-"temperature": temp,
-"cpu_temp": cpu_temp,
-"light_lvl": lux,
-}
