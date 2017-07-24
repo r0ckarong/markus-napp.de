@@ -1,0 +1,15 @@
+https://www.qbittorrent.org/news.php
+
+Prase latest release version
+Send update message
+
+Search for first h3
+Then for "qBittorrent "
+Then take position until " release"
+
+<h3>Thursday July 20th 2017 - qBittorrent v3.3.14 release</h3>
+
+
+----
+pip install beautifulsoup4
+----
