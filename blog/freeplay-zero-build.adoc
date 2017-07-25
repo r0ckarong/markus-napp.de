@@ -1,0 +1,15 @@
+
+
+== Parts list
+
+GBA Shell
+GBA Glass
+GBA Buttons
+GBA Rubber Button backing
+Batteries x2 (Type?)
+Tactile button caps
+JST 2Pin connector
+SD Card (16+ GB)
+Power Supply
+Raspberry Pi Zero W
+Freeplay Zero Kit
