@@ -14,9 +14,11 @@ known_versions = {}
 
 def get_current(tp):
     global known_versions
+    global known
     with open('known_versions.json','r') as verfile:
         known_versions = json.load(verfile)
         known = str(known_versions[tp][-1])
+        return known
 
 def append_known(tp, version):
     global known_versions
@@ -66,6 +68,8 @@ def find_g870a_update():
         send_bot_msg(message)
         print(url)
         append_known('g870a', version)
+    else:
+        print("No new update for G870A.")
 
 def find_qbt_update():
     get_current('qbt')
@@ -85,6 +89,8 @@ def find_qbt_update():
         send_bot_msg(message)
         print(url)
         append_known('qbt', version)
+    else:
+        print("No new update for qBittorrent.")
 
 schedule.every().day.at("12:00").do(find_g870a_update)
 schedule.every().day.at("12:00").do(find_qbt_update)
