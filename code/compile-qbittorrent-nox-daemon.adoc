@@ -4,8 +4,8 @@
 :imagesdir: images
 :toc-title: Inhalt
 :icons: font
-:revnumber: 1.0
-:revdate: 23.04.2017
+:revnumber: 1.1
+:revdate: 14.01.2018
 :stylesheet: ../boot-spacelab.css
 
 == Install Dependencies
@@ -29,7 +29,7 @@ geoip-database libgeoip-dev libboost-system-dev libboost-chrono-dev libboost-ran
 +
 ----
 make clean
-make
+make -j$(nproc)
 sudo make install
 ----
 
@@ -37,8 +37,8 @@ After librasterbar is finished and installed you can start with compiling qbitto
 
 == Compile qBittorrent
 
- ./configure --prefix=/usr --disable-gui
-make
+ ./configure --disable-gui
+make -j$(nproc)
 sudo make install
 
 == Set up daemon service
