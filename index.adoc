@@ -3,7 +3,7 @@
 :email: mail@markus-napp.de
 :toc-title: Inhalte
 :stylesheet: boot-spacelab.css
-:revdate: 30.03.2017
+:revdate: 09.01.2017
 
 <<<
 
@@ -12,10 +12,12 @@
 ++++
 
 :icons: font
-== Programming
+== Programming / Electronics
 
 * link:code/build-a-github-button.html[Adding a "Improve This"-Button to documentation]
 * link:code/compile-qbittorrent-nox-daemon.html[Install qBittorrent-nox daemon on Ubuntu]
+* link:blog/fritzbox-nas.html[Use Fritz!Box and external USB as a NAS]
+* link:blog/usb-c-lessons.html[Lessons for the USB-C Era]
 
 == Rezepte
 

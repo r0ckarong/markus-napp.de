@@ -35,7 +35,7 @@ NOTE: Make sure you have enough memory/SWAP. Trying to compile libtorrent raster
 +
 ----
 make clean
-make
+make -j$(nproc)
 sudo make install
 ----
 
@@ -43,8 +43,8 @@ After librasterbar is finished and installed you can start with compiling qbitto
 
 == Compile qBittorrent
 
- ./configure --prefix=/usr --disable-gui
-make
+ ./configure --disable-gui
+make -j$(nproc)
 sudo make install
 
 [[daemon]]

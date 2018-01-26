@@ -1,0 +1,64 @@
+= Using Fritz!Box and external USB case as NAS
+:revdate: 09.01.2018
+:author: Markus Napp <mail@markus-napp.de>
+
+How to set up an external 4 disk USB hard drive enclosure as a NAS for your network.
+
+== Parts
+
+NOTE: I realize that WD Blue are not ideal for an always on/always load NAS system but I use mine more like a connected backup/storage and it has lots of idle so I'm not concerned with the longevity of the bearings or whatever their reason for charging more is.
+
+* link:https://www.amazon.de/gp/product/B00ORENYJE/[Fantec QB-35US3-6G]
+* link:https://www.amazon.de/Blue-WD10EZEX-Interne-Festplatte-Zoll/dp/B0088PUEPK/[WD Blue 1TB WD10EZEX]
+* link:https://www.amazon.de/AVM-DOCSIS-3-0-Kabelmodem-Kabelanschluss-VoIP-Telefonanlage-DECT-Basis/dp/B01I2366QS/[Fritz!Box 6490 Cable]
+* Ubuntu 17.10
+
+== Setup
+
+* Unwrap Case
+* Unwrap Disks
+* Install handles on disks
+* Mount disks in case
+* Connect case to computer
+* Format disks
+* Disconnect case
+* Connect case to Fritz!Box
+* Go through FritzBox setup instructions for USB memory
+* Create users on FritzBox to control access to NAS
+* Note down user credentials for credentials file
+* Add mountpoints for NAS disks
++
+----
+sudo mkdir -p /media/NAS1/
+sudo mkdir -p /media/NAS2/
+----
+* Create credentials file `$HOME/.smbcredentials`
++
+[source]
+----
+username=<username for FritzBox>
+password=<password for that user>
+----
+* Add NAS disks to fstab
++
+[source]
+----
+//192.168.1.1/FRITZ.NAS/NAS_ONE/ /media/NAS1/ cifs credentials=/home/maggus/.smbcredentials,uid=1000,gid=1000,vers=1.0 0 0
+//192.168.1.1/FRITZ.NAS/NAS_TWO/ /media/NAS2/ cifs credentials=/home/maggus/.smbcredentials,uid=1000,gid=1000,vers=1.0 0 0
+----
+* Mount all disks
++
+----
+sudo mount -a
+----
+* Start using NAS
+
+IMPORTANT: Most instructions on the web ignore that from some versions of Ubuntu you *need to specify the cifs protocol version*. This is the "vers=1.0" portion in the fstab entry.
+Without this you will get error messages about `(112) Host is down` or something like that.
+
+== Problems with Partitions
+* Fritz!OS 6.87
+* Can't use ext3/ext4 partition. Simply won't add it.
+* Only works with FAT/FAT32/NTFS
+* AVM Support claims the disk is partitioned wrong but won't explain what "partitioned correctly" means.
+* Partitioned with `GParted 0.28.1` and `gnome-disk-utility 3.26.1` (both not leading to a recognized ext3/4 partition).
