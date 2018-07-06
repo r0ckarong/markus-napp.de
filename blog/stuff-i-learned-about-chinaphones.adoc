@@ -1,0 +1,23 @@
+= What I learned about Chinaphones
+
+
+
+== So what is a "Chinaphone"?
+
+It's a smartphone that is manufactured by a foreign manufacturer that does not have an established trade infrastructure or business in the western world.
+
+== CPU Makers matter,
+the reason your phone might not get a new Android update is because the maker of the chipset has not developed or released the necessary tools.
+
+== Repairs matter
+
+== Customer service matters
+
+== Not all cellphones are created equal
+Some local oddities of cell network routing are sometimes not fixed in the Chinaroms because they never happen anywhere else and thus there is no need.
+
+Germany for example had a merger of the ePlus and O2 networks. Now some Chinaphones like the Umidigi S2 on their version of Mediatek Android 6.0.1 can not establish a mobile data connection properly and will fail in most cases. You will be stuck without data in Roaming mode no matter what settings you choose.
+
+== We are being ripped off by the big companies
+
+== They are the future
