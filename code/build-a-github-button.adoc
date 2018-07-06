@@ -2,7 +2,7 @@
 :source-highlighter: coderay
 :revdate: 30.03.2017
 :revnumber: 0.3
-:stylesheet: boot-spacelab.css
+:stylesheet: ../boot-spacelab.css
 
 Inspired by this blog post: http://ben.balter.com/2015/09/13/github-pages-edit-button/
 
