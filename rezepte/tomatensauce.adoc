@@ -1,0 +1,93 @@
+= Die perfekte Tomatensauce
+:author: Markus Napp
+:email: mail@markus-napp.de
+:revnumber: 1.0
+:revdate: 30/04/2018
+:imagesdir: images
+:toc-title: Inhalt
+:icons: font
+:stylesheet: ../boot-spacelab.css
+
+<<<
+
+Inspired heavily by Chef John from Food Wishes and his recipe:
+
+* https://foodwishes.blogspot.com/2010/03/tomato-sauce-your-wish-is-eventually-my.html
+* https://www.youtube.com/watch?v=HP9doLye26I
+
+++++
+<script src="https://use.fontawesome.com/96d0595752.js"></script>
+++++
+
+image::tomatensauce.jpg[Tomatensauce]
+
+== Zutaten
+
+[options="header",cols="25,75"]
+|===
+|Gewicht |Zutat
+
+|800g
+|San Marzano Tomaten
+
+|1 mittelgroße
+|Zwiebel
+
+|3 Zehen
+|Knoblauch frisch
+
+|1 EL
+|Italienische Kraeuter getrocknet
+
+|2 EL
+|Oregano getrocknet
+
+|1/2 Topf
+|Basilikum frisch
+
+|2 EL
+|Tomatenmark
+
+|1 EL
+|Weisser Essig (italienisch)
+
+|3 TL
+|Zucker
+
+|1/2 TL
+|Chiliflocken
+
+|2 EL
+|Olivenoel (eventuell mehr fuer die Paste)
+
+|20g
+|Butter
+
+|1 EL
+|Worcestershire Sauce
+
+|nach Geschmack
+|Salz
+
+|nach Geschmack
+|Pfeffer schwarz
+|===
+
+NOTE: Es muessen _geschaelte_ San Marzano Tomaten aus der Dose sein damit es perfekt wird!
+
+. Zwiebel fein wuerfeln
+. Knoblauch fein hacken
+. Basilikum Chiffonade schneiden
+. Marzano Tomaten mit den Haenden zu einem Muß zerquetschen
+. Knoblauch mit Oel, Chiliflocken, Kraeuter zu einer Paste verruehren, ziehen lassen (30 Minuten)
+. Zwiebel in Oel glasig anduensten (15+ Minuten)
+. Zucker, Paste, Worcestershire, Essig hinzu geben
+. Weiter duensten bis die Fluessigkeiten verdunstet sind
+. Tomatenmark hinzu geben und anbraten
+. Mit den gequetschten Tomaten "abloeschen"
+. 20+ Minuten koecheln lassen
+. Mit Salz, Zucker, schwarzem Pfeffer abschmecken
+. geschnittenen Basilikum hinzu fuegen
+. Weiter 15 Minuten koecheln lassen
+. Butter hinzu geben und unterruehren
+. Servieren
