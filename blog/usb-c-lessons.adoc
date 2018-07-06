@@ -1,5 +1,6 @@
 = Lessons in using a USB-C MacBook
 :revdate: 09.01.2018
+:stylesheet: boot-spacelab.css
 
 * Get an all in one hub for your main workstations. Ethernet, USB 3, HDMI.
 * Get a second charger
