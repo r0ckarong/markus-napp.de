@@ -1,0 +1,147 @@
+= Update NordVPN Proxy Server in qBittorrent via Web API
+:author: Markus Napp
+:email: mail@markus-napp.de
+:imagesdir: images
+:toc-title: Inhalt
+:icons: font
+:revnumber: 1.0
+:revdate: 06.06.2018
+:stylesheet: ../boot-spacelab.css
+
+How to set up regular updates of your NordVPN proxy for qBittorrent
+
+You can use the link:https://github.com/qbittorrent/qBittorrent/wiki/Web-API-Documentation[qBittorrent Web API] to update your VPN host recommended servers
+regularly. I'm using link:http://www.nordvpn.com[NordVPN] because that's
+the one I use and they specifically list recommended servers
+for P2P Servers using the SOCKS5 protocol on their website.
+
+These instructions assume you have:
+
+* Installed link:https://httpie.org/[HTTPie]
++
+It's a modern curl replacement with some nifty features. Most of which we won't
+be using so you can achieve all of this stuff just as easily with curl.
+* Installed link:https://stedolan.github.io/jq/[jq]
++
+It's a super leightweight JSON tool that allows simple parsing and output manipulation.
+* Installed and configured link:https://www.qbittorrent.org[qBittorrent] 4.1.x to run on your local machine and provide the WebUI functionality.
+* A NordVPN Account
+* Configured qBittorrent to use a VPN proxy server (this includes putting your
+  credentials) into the config file.
+
+== Getting the server info
+
+First we need to find out what the VPN provider recommends us to use. You can
+use the same server for a long time but you can get better performance by connecting
+to the recommended servers because those are (I guess) selected by utilization.
+
+You will go to the link:https://nordvpn.com/servers/#recommended[Recommended Servers] page.
+When you monitor the requests from the website while making settings you will find
+that for our desired settings (Germany, P2P, SOCKS5) a request like this is made:
+
+.$QUERY
+----
+https://nordvpn.com/wp-admin/admin-ajax.php\?action\=servers_recommendations\&filters\=\{"country_id":81,"servers_groups":\[15\],"servers_technologies":\[7\]\}
+----
+
+When you grab this with HTTPie/cURL you will get a long-ish JSON file with descriptions
+for the five fastest servers. We only care about the first one because that is
+the fastest.
+
+Filter the output using `jq` to reduce the results to the raw `hostname` of the
+first entry.
+
+[source,bash]
+----
+http $QUERY | jq -r '.[0] | .hostname'
+----
+
+The result is something like `de123.nordvpn.com` that is the string we need to
+use to update the qBittorrent configuration.
+
+== Updating qBittorrent Settings
+
+NOTE: Replace the port `8112` with the port you configured for your WebUI.
+NOTE: `:8112` is HTTPie shorthand notation for `localhost:8112`
+
+Now that we know the hostname, it's easy to regularly check for it with a cronjob
+and just update the configuration. To do so, you must authenticate against the
+API using your WebUI credentials. Those are configured in the WebUI and you should
+now which username/password you have there.
+
+qBittorrent Web API uses cookies to authenticate. You need to retrieve a cookie
+for your user and pass that with the operations you wish to perform. For that we
+log in via a REST request and receive a cookie in return. After we're done we'll
+use that cookie to log out again.
+
+Replace `username:password` with your credentials.
+
+[source,bash]
+----
+http :8112/api/v2/auth/login Referer:http://localhost:8112 -a 'username:password' -h
+----
+
+We can filter for the cookies string by using grep to filter for the right line
+containing (SessionID / SID) and then printing the second column with awk.
+
+[source,bash]
+----
+http :8112/api/v2/auth/login Referer:http://localhost:8112 -a 'username:password' -h  | grep SID | awk '{print $2}'
+----
+
+The result looks like:
+
+[source,bash]
+----
+SID=PAg8Sdt2FGtatFurptVXD8VGN913fNAq;
+----
+
+To verify which proxy is currently set you can run:
+
+[source,bash]
+----
+http :8112/api/v2/app/preferences 'Cookie:$COOKIE' | jq '.' | jq -r '.proxy_ip'
+----
+
+Now it's time to update the configuration. For that we will POST a JSON payload
+to the API containing the new proxy hostname.
+
+NOTE: Replace `$PROXY` with the actual value returned from your query above.
+
+[source,bash]
+----
+http -b -f POST :8112/api/v2/app/setPreferences 'Cookie:$COOKIE' \ 'json={"proxy_ip":"$PROXY"}'
+----
+
+That's it. Your qBittorrent should now use the updated proxyserver.
+
+You can put all this together in a shell script and add an `@hourly` cronjob to
+keep the VPN proxy updated.
+
+.update-qbt-vpn.sh
+[source,bash]
+----
+#!/bin/bash
+
+# Retrieve current recommended proxy from NordVPN website
+PROXY=$(http https://nordvpn.com/wp-admin/admin-ajax.php\?action\=servers_recommendations\&filters\=\{"country_id":81,"servers_groups":\[15\],"servers_technologies":\[7\]\} | jq -r '.[0] | .hostname')
+echo "The recommended proxy is: $PROXY"
+
+# Retrieve login cookie for qBT WebUI
+COOKIE=$(http :8112/api/v2/auth/login Referer:http://localhost:8112 -a 'username:password' -h  | grep SID | awk '{print $2}')
+
+# Get current Proxy
+CURR_PROXY=$(http :8112/api/v2/app/preferences 'Cookie:$COOKIE' | jq '.' | jq -r '.proxy_ip')
+echo "Configured proxy is: $CURR_PROXY"
+
+if [[ $PROXY != $CURR_PROXY ]]
+then
+  # Write new Proxy
+  http -b -f POST :8112/api/v2/app/setPreferences 'Cookie:$COOKIE' 'json={"proxy_ip":"'$PROXY'"}'
+  echo "Updating configured proxy."
+else
+  echo "Already using the recommended proxy."
+fi
+
+http -b POST :8112/api/v2/auth/logout Referer:http://localhost:8112 'Cookie:$COOKIE'
+----
