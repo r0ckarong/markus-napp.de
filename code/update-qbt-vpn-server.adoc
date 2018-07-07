@@ -4,7 +4,7 @@
 :imagesdir: images
 :toc-title: Inhalt
 :icons: font
-:revnumber: 1.0
+:revnumber: 1.1
 :revdate: 06.06.2018
 :stylesheet: ../boot-spacelab.css
 
