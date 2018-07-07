@@ -128,20 +128,20 @@ PROXY=$(http https://nordvpn.com/wp-admin/admin-ajax.php\?action\=servers_recomm
 echo "The recommended proxy is: $PROXY"
 
 # Retrieve login cookie for qBT WebUI
-COOKIE=$(http :8112/api/v2/auth/login Referer:http://localhost:8112 -a 'username:password' -h  | grep SID | awk '{print $2}')
+COOKIE=$(http :8112/api/v2/auth/login Referer:http://localhost:8112 -a 'username:password' -h  --ignore-stdin | grep SID | awk '{print $2}')
 
 # Get current Proxy
-CURR_PROXY=$(http :8112/api/v2/app/preferences 'Cookie:$COOKIE' | jq '.' | jq -r '.proxy_ip')
+CURR_PROXY=$(http :8112/api/v2/app/preferences 'Cookie:$COOKIE' --ignore-stdin | jq '.' | jq -r '.proxy_ip')
 echo "Configured proxy is: $CURR_PROXY"
 
 if [[ $PROXY != $CURR_PROXY ]]
 then
   # Write new Proxy
-  http -b -f POST :8112/api/v2/app/setPreferences 'Cookie:$COOKIE' 'json={"proxy_ip":"'$PROXY'"}'
+  http -b -f POST :8112/api/v2/app/setPreferences 'Cookie:$COOKIE' 'json={"proxy_ip":"'$PROXY'"}' --ignore-stdin
   echo "Updating configured proxy."
 else
   echo "Already using the recommended proxy."
 fi
 
-http -b POST :8112/api/v2/auth/logout Referer:http://localhost:8112 'Cookie:$COOKIE'
+http -b POST :8112/api/v2/auth/logout Referer:http://localhost:8112 'Cookie:$COOKIE' --ignore-stdin
 ----
