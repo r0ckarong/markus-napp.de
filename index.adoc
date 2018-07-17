@@ -3,7 +3,8 @@
 :email: mail@markus-napp.de
 :toc-title: Inhalte
 :stylesheet: boot-spacelab.css
-:revdate: 06.06.2018
+:revnumber: 2.3
+:revdate: 17.07.2018
 
 <<<
 
@@ -33,3 +34,4 @@
 * link:shows-i-cant-believe-are-still-on-air.html[Shows I can't believe are still on air]
 * link:ben-stiller.html[Ben Stiller]
 * link:blog/fake-viral-tussis.html[V wie Vick dich Viral - Wie sich Künstler mit Fake Viral Clicks ergaunern]
+* link:blog/childish-thisisamerica.html[Some white dude's thoughts about: Childish Gamibino - This is America]
