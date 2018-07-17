@@ -4,8 +4,8 @@
 :imagesdir: images
 :toc-title: Inhalt
 :icons: font
-:revnumber: 1.1
-:revdate: 06.06.2018
+:revnumber: 1.2
+:revdate: 17.07.2018
 :stylesheet: ../boot-spacelab.css
 
 How to set up regular updates of your NordVPN proxy for qBittorrent
@@ -23,7 +23,7 @@ It's a modern curl replacement with some nifty features. Most of which we won't
 be using so you can achieve all of this stuff just as easily with curl.
 * Installed link:https://stedolan.github.io/jq/[jq]
 +
-It's a super leightweight JSON tool that allows simple parsing and output manipulation.
+It's a super lightweight JSON tool that allows simple parsing and output manipulation.
 * Installed and configured link:https://www.qbittorrent.org[qBittorrent] 4.1.x to run on your local machine and provide the WebUI functionality.
 * A NordVPN Account
 * Configured qBittorrent to use a VPN proxy server (this includes putting your
@@ -115,20 +115,21 @@ http -b -f POST :8112/api/v2/app/setPreferences 'Cookie:$COOKIE' \ 'json={"proxy
 
 That's it. Your qBittorrent should now use the updated proxyserver.
 
-You can put all this together in a shell script and add an `@hourly` cronjob to
+You can put all this together in a shell script and add an `* 2 * * *` (every two hours) cronjob to
 keep the VPN proxy updated.
 
 .update-qbt-vpn.sh
 [source,bash]
 ----
 #!/bin/bash
+set -e
 
 # Retrieve current recommended proxy from NordVPN website
 PROXY=$(http https://nordvpn.com/wp-admin/admin-ajax.php\?action\=servers_recommendations\&filters\=\{"country_id":81,"servers_groups":\[15\],"servers_technologies":\[7\]\} | jq -r '.[0] | .hostname')
 echo "The recommended proxy is: $PROXY"
 
 # Retrieve login cookie for qBT WebUI
-COOKIE=$(http :8112/api/v2/auth/login Referer:http://localhost:8112 -a 'username:password' -h  --ignore-stdin | grep SID | awk '{print $2}')
+COOKIE=$(http :8112/api/v2/auth/login Referer:http://localhost:8112 -a 'username:password' -h --ignore-stdin | grep SID | awk '{print $2}')
 
 # Get current Proxy
 CURR_PROXY=$(http :8112/api/v2/app/preferences 'Cookie:$COOKIE' --ignore-stdin | jq '.' | jq -r '.proxy_ip')
@@ -139,9 +140,21 @@ then
   # Write new Proxy
   http -b -f POST :8112/api/v2/app/setPreferences 'Cookie:$COOKIE' 'json={"proxy_ip":"'$PROXY'"}' --ignore-stdin
   echo "Updating configured proxy."
+  http -b -f POST :8112/api/v2/torrents/pause 'Cookie:$COOKIE' 'hashes=all' --ignore-stdin
+  echo "Pausing all torrent for 3 seconds"
+  sleep 3s
+  http -b -f POST :8112/api/v2/torrents/resume 'Cookie:$COOKIE' 'hashes=all' --ignore-stdin
+  echo "Resumed all torrents"
 else
   echo "Already using the recommended proxy."
 fi
 
 http -b POST :8112/api/v2/auth/logout Referer:http://localhost:8112 'Cookie:$COOKIE' --ignore-stdin
+
+# Retrieve list of torrents
+#http :8112/api/v2/torrents/info 'Cookie:$COOKIE'
+
+# Get all preferences
+#http :8112/api/v2/app/preferences 'Cookie:$COOKIE'
+
 ----
