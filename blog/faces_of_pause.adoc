@@ -1,0 +1,48 @@
+= Faces of Pause
+:author: Markus Napp
+:email: mail@markus-napp.de
+:toc-title: Inhalt
+:icons: font
+:revnumber: 1.0
+:revdate: 21.07.2018
+:stylesheet: ../boot-spacelab.css
+:imagesdir: images_faces
+
+These faces are the result of pausing a playing entertainment video for any reason.
+They are not staged, I do not look for these to happen but whenever I do I try
+to document them. People look weird.
+
+Enjoy yourself you weird looker.
+
+.20.07.2018, Subject: Unknown, The Joel MacHale Show with Joel MacHale, Season 2 Episode 4, Netflix
+image:1.png[1]
+
+.13.08.2014, Subject: Abdelkarim, Stuttgarter Kabarettfestival 2012, YouTube
+image:2.jpg[2]
+
+.04.12.2014, Subject: Hannes Ringlstetter, Bühnensport, BR Fernsehen
+image:3.jpg[3]
+
+.10.01.2015, Subject: Steve Agee, @Midnight, Comedy Central
+image:4.png[4]
+
+.23.01.2015, Subject: Trevor Noah, Afraid of the Dark, Netflix
+image:5.png[5]
+
+.25.02.2015, Subject: Chris Hardwick, @Midnight, Comedy Central
+image:6.jpg[6]
+
+.21.03.2015, Subject: Oliver Welke, Heute Show, ZDF
+image:7.jpg[7]
+
+.12.05.2015, Subject: Russell Howard, Russel Howard's Good News, BBC
+image:8.jpg[8]
+
+.10.08.2015, Subject: Domenick Lombardozzi, Unknown (Possibly The Wire), Unknown
+image:9.jpg[9]
+
+.27.08.2015, Subject: Jan Böhmermann, Neo Magazin Royale, ZDF Neo
+image:10.jpg[10]
+
+.26.09.2015, Subject: Nancy Reagan, Unknown, Unknown
+image:11.jpg[11]
