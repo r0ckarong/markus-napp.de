@@ -3,13 +3,13 @@
 :email: mail@markus-napp.de
 :toc-title: Inhalt
 :icons: font
-:revnumber: 1.0
+:revnumber: 1.1
 :revdate: 21.07.2018
 :stylesheet: ../boot-spacelab.css
 :imagesdir: images_faces
 
 These faces are the result of pausing a playing entertainment video for any reason.
-They are not staged, I do not look for these to happen but whenever I do I try
+They are not staged, I do not look for these to happen. Whenever I find them, I try
 to document them. People look weird.
 
 Enjoy yourself you weird looker.
