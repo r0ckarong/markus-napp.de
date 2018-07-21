@@ -3,7 +3,7 @@
 :email: mail@markus-napp.de
 :toc-title: Inhalt
 :icons: font
-:revnumber: 1.1
+:revnumber: 1.2
 :revdate: 21.07.2018
 :stylesheet: ../boot-spacelab.css
 :imagesdir: images_faces
@@ -12,7 +12,7 @@ These faces are the result of pausing a playing entertainment video for any reas
 They are not staged, I do not look for these to happen. Whenever I find them, I try
 to document them. People look weird.
 
-Enjoy yourself you weird looker.
+Enjoy yourself, you weird looker.
 
 .20.07.2018, Subject: Unknown, The Joel MacHale Show with Joel MacHale, Season 2 Episode 4, Netflix
 image:1.jpg[1, width=800px]
