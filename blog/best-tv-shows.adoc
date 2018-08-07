@@ -1,0 +1,37 @@
+= List of best TV shows ever
+:author: Markus Napp
+:email: mail@markus-napp.de
+:imagesdir: images
+:toc-title: Inhalt
+:icons: font
+:revnumber: 1.0
+:revdate: 08.08.2018
+:stylesheet: ../boot-spacelab.css
+
+Not in any particular order of "grade"
+
+. The Shield
+. The Wire
+. Breaking Bad
+. Better Call Saul
+. The Expanse
+. Narcos
+. Atlanta
+. Westworld
+. Game of Thrones
+. Unbreakable Kimmy Schmidt
+. Taboo
+. Star Trek: The New Generation
+. Kill la Kill
+. One Punch Man
+. Last Week Tonight with John Oliver
+. Mock the Week
+. Nevermind the Buzzcocks
+. @Midnight
+. The Late Late Show with Craig Ferguson
+. The Daily Show with John Stewart
+. The Daily Show with Trevor Noah
+. Boardwalk Empire
+. River Cottage Series
+. Kitchen Nightmares UK (NOT US!)
+. 
