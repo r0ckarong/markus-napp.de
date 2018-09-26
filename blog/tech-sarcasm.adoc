@@ -1,37 +1,101 @@
 = Tech Sarcasm
+:author: Markus Napp
+:email: mail@markus-napp.de
+:imagesdir: images
+:toc-title: Inhalt
+:icons: font
+:revnumber: 0.1
+:revdate: 26.09.2018
+:stylesheet: ../boot-spacelab.css
 
-Premise:
-During a discussion about 2FA on GitHub I mentioned that I use KeePassXC and KeePass2Android with Dropbox for my password manager and Authy for 2FA.
+<<<
 
-The response by someone I appreciate as a person was: 
+During a discussion about 2FA on GitHub, I mentioned that I use link:https://keepassxc.org[KeePassXC]/link:https://play.google.com/store/apps/details?id=keepass2android.keepass2android[KeePass2Android] for my password manager and link:https://authy.com/download/[Authy] for 2FA. I also use Dropbox to keep the password database in sync across my most frequently used devices (6 at a time right now).
 
-[quote]
+The response that triggered my train of thought on this was:
+
+[quote, 26.9.2018]
 ____
-Passwords in the cloud, with Android. Beautiful. What could possibly go wrong. 
-:-) 
+Passwords in the cloud, with Android. Beautiful. What could possibly go wrong.
+:-)
 ____
 
-This is the sarcasm towards technology which I have shared for a long time but have recently started to wane on.
-I am a deeply privacy focused person and I share security concerns with much of my peers in the tech community but I want to ask this question, honestly and from the bottom of my heart:
+I am a deeply privacy focused person and I share security concerns with much of my peers in the tech community; but I want to ask this question, honestly and from the bottom of my heart:
 
 "Tech Sarcasm, what is it good for?"
 
-Honestly I appreaciate a good bit of tech sarcasm but what are the alternatives without turning into Richard Stallman?
+For this I believe I should go on a little bit of a ramble to show you were I'm coming from with my thoughts.
 
-There are two main factors that trump everything else; if there is a better way to do what I'm doing without breaking those I want to hear them. To me it boils down to these to criteria:
+I appreaciate a good bit of tech sarcasm but what are the alternatives without turning into Richard Stallman?
 
-* 1) I WANT to use technology. I don't need it, it's just too convenient and useful.
-* 2) Technology that is more work to run than it is recovering from it's failure will make me turn it off/discontinue using it.
 
-So let's look at this:
+
+== What is technology
+
+Technology permeates all walks of life these days with all the consequences that statement implies. More and more basic tasks are becoming nearly impossible to do without technology simply because there is no need to do it the old and outdated way anymore. When was the last time you looked up a phone number in a book? When was the last time you booked a private flight via phone?
+
+Personally, I love thinking about skills that appear archaic to us now: carpentry, blacksmithing, farm work. As a hobby many of us engage in these in some way or another and they are far from dead as jobs. You often hear the argument that once our technological society finally succumbs to humanity itself, we will be back throwing rocks and trading knitted underwear for sharpened sticks and that these "archaic" skills will have a renaissance. I doubt it.
+
+Once technology replaces a previous process the old method is gone and if the circumstances that made the new technology are not wiped out by war or any other disaster the new methods stays. The old ways stay a "fallback". Granted, once you need it you do appreciate the guy who can fix a fence without powertools or cook a meal without googling the recipe. I do enjoy trying to maintain some of these basic skills for when the Zombies eat our electricty but I don't see any reason to make my life harder than it is on a daily basis.
+
+There are two main factors for me that trump everything else; if there is a better way to do what I'm doing without breaking those I want to hear them.
+
+. I WANT to use (modern) technology. I don't need it, it's just too convenient and useful to pass up.
+. Technology that is more work to run than it is recovering from it's failings and failures will make me stop using it.
+
+== I want to use (modern) technology
+
+I think most of us can agree on this. That's why we work with technology, work _in_ technology, use tech in our daily lives and simply why the world has largely become such a tech-y place. Technology is our biggest advantage over the rest of the creatures on this planet. It has chilling downsides, side, and after-effects but we wouldn't be the species we are today without our drive to improve technology and our fun in applying and using it.
+
+What I'm trying to get at is: I *want* to use modern technology, I don't see a reason to limit myself to some form of outpaced method just for the sake of not adapting or some horror scenario. If you're the type of person that avoids doing things because "might be" is a factor I wonder how often you can leave the house.
+
+Which brings me to the next point.
+
+== Technology needs to do more for me than I need to do for it
+
+When I think of technology the spread is inarguably wide. You can regard a rock spliced into a stick to form a basic axe a marvel of technology or think about distributed high-speed data processing across a worldwide communication network. Whatever you think of as technology the purpose is the same: It solves a problem. Newer technologies solve either new problems or old problems in a better way.
+
+When it comes to tech adoption we have to speak about privacy. No discussion about the adoption of consumer technology these days can go without conjuring up the most outrageous horror scenarios about totalitarian states and corporations that shape our behavior. While a lot of things that we have learned have happened over the course of our technological development are horrifyingly accurate, I find most of the common arguments do not outweigh the benefits for _most_ people.
+
+== Tech Sarcasm (and the hyprocites that have it)
+
+Let's call back to the quote that started this train of thought: `Passwords in the cloud, with Android. Beautiful. What could possibly go wrong.`
+
+When I decode this it reads like this: `Security/Privacy technology. Sarcasm. You come up with some horror scenario now.`
+
+This is the kind of sarcasm towards technology which I have shared for a long time but have recently started to wane on; because I simply can't find any justification for it any more. I adopted tech-sarcasm myself because it was one of the things that were part of this subculture of tech-nerds and appeared to be a mark of achievement. Only a hardened, experienced hacker could be bitter and disillusioned enough to cover any and all new technology with such bile. Think The Simpsons' "Comic Book Guy" but for anything tech. However, just as the "Comic Book Guy" is a caricature and his opinions appeal to and impress those competing with him in a specialized realm, it looks hyperbolic, unreflected and inflexible if it is not put into context for anyone else.
+
+There is a German word that was coined as the "non-word" in 2010: "link:https://www.duden.de/rechtschreibung/alternativlos[alternativlos]". Roughly paraphrased it is the act of stating something in such a way that the wording suggests there can be no alternatives and thus any discussion or gradation is futile. Fun fact: It is also the name of an link:https://alternativlos.org[entertaining podcast of two very tech sarcastic individuals]. Tech
+
+
+
+
+
+This excludes people who actively pursue activities that go against state governements or other oppresive power structures. They're at war, their rules should not have to apply to us civilians. We're in a situation right now where the cross section of the population that actively used high-technology for recreational purposes on a day to day basis has exploded. Just a couple of years ago (pretty much right up until the first iPhone) people that spent their time mostly with computers or similar machinery were scholars, researchers, specialists or at least highly dedicated hobbyists. In general technology was not "easy".
+
+There is a range from:
+
+People who perform each and every private, porn related, illness declaring, boss insulting, discourse attacking web search naked with an Echo/Alexa/Siri bolted to their headboard.
+to
+Hermits that live off organically farmed turnips and self hunted game in some woodland area and speaking in a cipher that only they understand.
+
+== Alternatives Arguments
 
 Android:
 
 We can be sarcastic and shit on Android and Google all we want but there are no feasible alternatives. Sailfish, Ubuntu Phone, AOSP and all ports ... they don't work. They break rule #2.
 
+2FA
 
+Dropbox/Cloud
 
 
 Same goes for all the 2FA alternatives I've tried. Funny that you mention YubiKey and FIDO. I have YubiKeys and I stopped using them because I either forget to bring them where I need them or the amount of work to get them to do everything
 
 Synching password databases manually always leaves me in some situation were either one side is not updated when I need it. Doesn't work, needs to happen automatically somehow.
+
+== Closing remarks
+
+The dangers are real. I realize and acknowledge that. We all need to keep governements, corporations and our peers in check and keep them from abusing technology to make life worse.
+
+*No opinions were harmed during the writing of this article*
