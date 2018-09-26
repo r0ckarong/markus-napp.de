@@ -1,0 +1,37 @@
+= Tech Sarcasm
+
+Premise:
+During a discussion about 2FA on GitHub I mentioned that I use KeePassXC and KeePass2Android with Dropbox for my password manager and Authy for 2FA.
+
+The response by someone I appreciate as a person was: 
+
+[quote]
+____
+Passwords in the cloud, with Android. Beautiful. What could possibly go wrong. 
+:-) 
+____
+
+This is the sarcasm towards technology which I have shared for a long time but have recently started to wane on.
+I am a deeply privacy focused person and I share security concerns with much of my peers in the tech community but I want to ask this question, honestly and from the bottom of my heart:
+
+"Tech Sarcasm, what is it good for?"
+
+Honestly I appreaciate a good bit of tech sarcasm but what are the alternatives without turning into Richard Stallman?
+
+There are two main factors that trump everything else; if there is a better way to do what I'm doing without breaking those I want to hear them. To me it boils down to these to criteria:
+
+* 1) I WANT to use technology. I don't need it, it's just too convenient and useful.
+* 2) Technology that is more work to run than it is recovering from it's failure will make me turn it off/discontinue using it.
+
+So let's look at this:
+
+Android:
+
+We can be sarcastic and shit on Android and Google all we want but there are no feasible alternatives. Sailfish, Ubuntu Phone, AOSP and all ports ... they don't work. They break rule #2.
+
+
+
+
+Same goes for all the 2FA alternatives I've tried. Funny that you mention YubiKey and FIDO. I have YubiKeys and I stopped using them because I either forget to bring them where I need them or the amount of work to get them to do everything
+
+Synching password databases manually always leaves me in some situation were either one side is not updated when I need it. Doesn't work, needs to happen automatically somehow.
