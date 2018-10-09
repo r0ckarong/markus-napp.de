@@ -7,7 +7,11 @@
 :revdate: 09.10.2018
 :stylesheet: ../boot-spacelab.css
 
+== Deppen und Humor
+
 Ich musste etwas mit meiner Aufmerksamkeitsschwaeche kaempfen um mich durch diesen tollen Artikel zu graben: link:https://uebermedien.de/32120/darueber-wird-man-doch-wohl-noch-nicht-lachen-duerfen/[Uebermedien: Darueber wird man doch wohl noch nicht lachen duerfen].
+
+== Warum gut lachen wichtig ist
 
 Comedy funktioniert durch Ueberraschung. Die klassische Setup/Punchline Kombination im Standup macht das sehr einfach deutlich. 
 Es wird ein Spannungsbogen aufgebaut und dann meistens durch eine von der Erwartung abweichende Pointe wieder freigesetzt. 
