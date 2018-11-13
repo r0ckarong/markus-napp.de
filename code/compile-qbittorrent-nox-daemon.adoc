@@ -4,8 +4,8 @@
 :imagesdir: images
 :toc-title: Inhalt
 :icons: font
-:revnumber: 1.1
-:revdate: 26.01.2018
+:revnumber: 1.2
+:revdate: 13.11.2018
 :stylesheet: ../boot-spacelab.css
 
 == Install from PPA
@@ -52,7 +52,7 @@ sudo make install
 
 === Start qBittorrent once to create the config directory
 
-IMPORTANT: Make sure you do NOT start this first time while logged in as `root`. The application will not be able to write to `/home/$USER/.local/share/data/qBittorret/` and will crash. Also the config file in `/home/$USER/.config/qBitorrent/qBittorrent.conf` must be read/writable.
+IMPORTANT: Make sure you do NOT start this first time while logged in as `root`. The application will not be able to write to `/home/$USER/.local/share/data/qBittorrent/` and will crash. Also the config file in `/home/$USER/.config/qBitorrent/qBittorrent.conf` must be read/writable.
 
 ----
 qbittorrent-nox
