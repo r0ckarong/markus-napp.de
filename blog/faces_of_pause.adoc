@@ -52,3 +52,6 @@ image:13.jpg[13, width=800px]
 
 .10.10.2018, Subject: Bret McKenzie, Flight of the Conchords: Live in London, HBO
 image:14.jpg[14, width=800px]
+
+.15.12.2018, Subject: Marc Kermode, Kermode Uncut: The Ten Worst Films Of The Last Ten Years - Part One, BBC/YouTube
+image:15.jpg[15, width=800px]
