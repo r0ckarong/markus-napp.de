@@ -3,8 +3,8 @@
 :email: mail@markus-napp.de
 :toc-title: Inhalt
 :icons: font
-:revnumber: 1.4
-:revdate: 10.10.2018
+:revnumber: 1.5
+:revdate: 15.12.2018
 :stylesheet: ../boot-spacelab.css
 :imagesdir: images_faces
 
