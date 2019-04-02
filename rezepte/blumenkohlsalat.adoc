@@ -1,0 +1,70 @@
+= Blumenkohlsalat
+:author: Markus Napp
+:email: mail@markus-napp.de
+:revnumber: 0.1 DRAFT
+:revdate: 2019-04-02
+:imagesdir: images
+:toc-title: Inhalt
+:icons: font
+:stylesheet: ../boot-spacelab.css
+
+== Zutaten
+
+[options="header",cols="25,75"]
+|===
+|Gewicht |Zutat
+
+|1 Dose
+|Borlotti Bohnen
+
+|1 Kopf
+|Blumenkohl
+
+|1 Bund
+|Radieschen
+
+|1/2 
+|Salatgurke
+
+|1 Stück
+|Paprika rot
+
+|1/2 Bund
+|Petersilie glatt
+
+|150 gr
+|Joghurt oder Skyr
+
+|3 Stück (mittel)
+|rote Zwiebeln
+
+|1 Packung
+|Suppengrün gehackt (frisch) / Alternativ: 1/2 Stange Lauch gehackt
+
+|600 gr
+|Hühnchenbrustfilet
+
+|1 EL
+|El Baharati Gewürz
+
+|150 ml
+|Leitungswasser kalt
+
+|1 TL
+|Limettensaft
+
+|1 TL
+|Chicken Salt (oder Salz)
+
+|5 ml
+|Worcestershire Sauce
+
+|1 EL
+|Minze gehackt
+
+|1 Stück
+|Romana Salatherz
+
+|1 TL
+|Birkenzucker (oder Zucker)
+|===
