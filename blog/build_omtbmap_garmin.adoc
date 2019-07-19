@@ -1,0 +1,9 @@
+http -d https://ftp.gwdg.de/pub/misc/openstreetmap/openmtbmap/odbl/mtbgermany.exe
+
+7z x -omtbgermany/ mtbgermany.exe
+
+mkgmap *.img hikede.TYP --gmapsupp --output-dir=../
+
+md5sum gmapsupp.img > gmapsupp.img.md5
+
+rsync -avP gmapsupp.img <SDCARD>
