@@ -55,3 +55,6 @@ image:14.jpg[14, width=800px]
 
 .15.12.2018, Subject: Marc Kermode, Kermode Uncut: The Ten Worst Films Of The Last Ten Years - Part One, BBC/YouTube
 image:15.jpg[15, width=800px]
+
+.19.07.2019, Subject: Natasha Leggero, Comedy Central [YouTube]
+image:16.jpg[16, width=800px]
