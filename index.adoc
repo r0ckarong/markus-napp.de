@@ -3,8 +3,8 @@
 :email: mail@markus-napp.de
 :toc-title: Inhalte
 :stylesheet: boot-spacelab.css
-:revnumber: 2.8
-:revdate: 15.12.2018
+:revnumber: 2.9
+:revdate: 23.10.2019
 
 <<<
 
@@ -30,6 +30,7 @@
 
 == Other Nonsense
 
+* links:blog/relotius-complaints.adoc[Claas Relotius is a lying piece of shit]
 * link:blog/deppenhumor.html[Das Problem mit Deppen und Humor (German)]
 * link:blog/faces_of_pause.html[Faces of Pause]
 * link:bands.html[Bands I like]
