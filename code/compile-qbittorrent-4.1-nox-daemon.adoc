@@ -1,0 +1,193 @@
+= Install qBittorrent-nox (4.1.x) Daemon on Ubuntu
+:author: Markus Napp
+:email: mail@markus-napp.de
+:imagesdir: images
+:toc-title: Inhalt
+:icons: font
+:revnumber: 1.5
+:revdate: 2019-04-12
+:stylesheet: ../boot-spacelab.css
+:qbt: 4.1.5
+:libtorrent: 1.1.13
+
+NOTE: Build steps last verified for qBitTorrent {qbt} / libtorrent-rasterbar {libtorrent}
+
+== Install from PPA
+
+If for any reason the following steps do not work or you're just too lazy, you can simply install the latest package versions from the link:https://launchpad.net/~qbittorrent-team/+archive/ubuntu/qbittorrent-stable[qBittorrent PPA] and then skip straight to link:#daemon[setting up the daemon] or if you want to use it manually skip to link:#mime-handler[setting up mime types] for easy Magnet link and torrent handling.
+
+== Install Dependencies
+* Get link:https://github.com/arvidn/libtorrent[Libtorrent Rasterbar sources] (1.1.x)
+* Get link:https://github.com/qbittorrent/qBittorrent/releases[qBittorrent sources] (4.1.x)
+* Install OS build tools and deps
++
+----
+sudo apt-get install build-essential cmake qt5-default libboost-dev libboost-system-dev qtbase5-dev qttools5-dev-tools libqt5svg5-dev python \
+geoip-database libgeoip-dev libboost-system-dev libboost-chrono-dev libboost-random-dev libssl-dev git pkg-config automake libtool
+----
+
+NOTE: Make sure you have enough memory/SWAP. Trying to compile libtorrent rasterbar on 512MB RAM on a t2.nano EC2 instance fails (see Troubleshooting below).
+
+== Compile libtorrent-rasterbar
+
+* Configure project
++
+----
+export LDFLAGS=-L/opt/local/lib
+export CXXFLAGS=-I/opt/local/include
+./configure --disable-debug --enable-encryption --prefix=/usr --with-libgeoip=system CXXFLAGS=-std=c++11
+----
+* Compile and install
++
+----
+make clean
+make -j$(nproc)
+sudo make install
+----
+
+After librasterbar is finished and installed you can start with compiling qbittorrent-nox
+
+== Compile qBittorrent
+
+ ./configure --disable-gui
+make -j$(nproc)
+sudo make install
+
+[[daemon]]
+== Set up daemon service
+
+=== Start qBittorrent once to create the config directory
+
+IMPORTANT: Make sure you do NOT start this first time while logged in as `root`. The application will not be able to write to `/home/$USER/.local/share/data/qBittorrent/` and will crash. Also the config file in `/home/$USER/.config/qBitorrent/qBittorrent.conf` must be read/writable.
+
+----
+qbittorrent-nox
+----
+
+Then cancel out with `Ctrl+C`
+
+=== Install service file for systemd
+
+Create a file:
+
+./etc/systemd/system/qbittorrent.service
+[source]
+----
+[Unit]
+Description=qBittorrent Daemon Service
+After=network.target
+
+[Service]
+Type=forking
+User=maggus
+ExecStart=/usr/bin/qbittorrent-nox -d
+
+[Install]
+WantedBy=multi-user.target
+----
+
+Then run
+----
+sudo systemctl daemon-reload // <1>
+sudo systemctl start qbittorrent.service // <2>
+sudo systemctl enable qbittorrent.service // <3>
+----
+<1> Reload daemon definition files
+<2> Start qBittorrent service
+<3> Enable qBittorrent service to start on boot
+
+TIP: You can create the service file in a Dropbox and then link the file into the respective directory to migrate it to other machines with the same installation or for easy backup.
+
+[[mime-handler]]
+== Install Torrent Filetype handler
+
+IMPORTANT: Make sure you update the mime type definitions of `gvfs-open` and `xdg-open` after adding the
+
+To make life easier with using qBittorrent-nox and the Webui you can define a handlers for the torrent files and magnet links. Create new files:
+
+.qbittorrent-nox-add-file.desktop
+[source]
+----
+[Desktop Entry]
+Version=4.0.3
+Type=Application
+Encoding=UTF-8
+Name=qBittorrent-nox
+Comment=Headless qBittorrent
+Exec=qbittorrent-nox --webui-port=8112 %F %U
+Mimetype=application/x-bittorrent;
+Terminal=true
+----
+
+.qbittorrent-nox-add-link.desktop
+[source]
+----
+[Desktop Entry]
+Version=4.0.3
+Type=Application
+Encoding=UTF-8
+Name=qBittorrent-nox
+Comment=Headless qBittorrent
+Exec=qbittorrent-nox --webui-port=8112 %U
+Mimetype=x-scheme-handler/magnet;
+Terminal=true
+----
+
+Create symlinks to these files in "/usr/share/applications"
+
+NOTE: A terminal will pop up shortly because the option `Terminal=true` is set. This can serve as an indicator that something has actually happened. If you find this annoying simply set `Terminal=false`.
+
+=== Update Mime type
+
+.GNOME
+----
+gvfs-mime --set application/x-bittorrent qbittorrent-nox-add-file.desktop
+gvfs-mime --set x-scheme-handler/magnet qbittorrent-nox-add-link.desktop
+----
+
+.XDG
+----
+xdg-mime default qbittorrent-nox-add-link.desktop x-scheme-handler/magnet
+xdg-mime default qbittorrent-nox-add-file.desktop application/x-bittorrent
+----
+
+[[ssl]]
+== Add Letsencrypt Cert to qBittorrent WebUI
+
+Go through the procedure of setting up link:https://letsencrypt.org/getting-started/[letsencrypt]
+
+Once you have the certificate installed and SSL enabled for your webserver you will receive some certificates. These are located in `/etc/letsencrypt/live/$DOMAIN`. You must then add these to the qBittorrent config as:
+
+./home/$USER/.config/qBittorrent/qBittorrent.conf
+----
+WebUI\HTTPS\Certificate=
+WebUI\HTTPS\Key=
+----
+
+https://superuser.com/questions/1205125/how-to-setup-https-on-qbittorrent-webui-with-letsencrypt-certbot
+
+== Troubleshooting
+
+=== libtorrent-rasterbar compilation fails
+
+.Error message from libtorrent-rasterbar `make`
+----
+g++: internal compiler error: Killed (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <file:///usr/share/doc/gcc-5/README.Bugs> for instructions.
+Makefile:941: recipe for target 'http_connection.lo' failed
+make[1]: *** [http_connection.lo] Error 1
+make[1]: Leaving directory '/home/ubuntu/libtorrent-rasterbar-1.1.6/src'
+Makefile:620: recipe for target 'all-recursive' failed
+make: *** [all-recursive] Error 1
+----
+
+The machine ran out of memory during compilation. You need to add more memory or some link:https://support.rackspace.com/how-to/create-a-linux-swap-file/[SWAP].
+
+== Sources
+[[bibliography]]
+* https://github.com/qbittorrent/qBittorrent/wiki/Compiling-qBittorrent-on-Debian-and-Ubuntu
+* https://github.com/qbittorrent/qBittorrent/wiki/Running-qBittorrent-without-X-server
+* https://github.com/qbittorrent/qBittorrent/wiki/Setting-up-qBittorrent-on-Ubuntu-server-as-daemon-with-Web-interface-(15.04-and-newer)
+* https://askubuntu.com/questions/122930/how-can-i-make-firefox-open-magnet-links-in-transmission

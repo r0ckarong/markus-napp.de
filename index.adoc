@@ -3,8 +3,8 @@
 :email: mail@markus-napp.de
 :toc-title: Inhalte
 :stylesheet: boot-spacelab.css
-:revnumber: 2.9
-:revdate: 23.10.2019
+:revnumber: 3.0
+:revdate: 2019-12-04
 
 <<<
 
@@ -16,7 +16,7 @@
 == Programming / Electronics
 
 * link:code/build-a-github-button.html[Adding an "Improve This"-Button to AsciiBinder based documentation]
-* link:code/compile-qbittorrent-nox-daemon.html[Install qBittorrent-nox daemon on Ubuntu]
+* link:code/compile-qbittorrent-4.1-nox-daemon.html[Install qBittorrent-nox daemon on Ubuntu]
 * link:code/update-qbt-vpn-server.html[Update qBittorrent VPN Proxy Server via Web API]
 * link:blog/fritzbox-nas.html[Use Fritz!Box and external USB as a NAS]
 * link:blog/usb-c-lessons.html[Lessons for the USB-C Era]
