@@ -1,14 +1,14 @@
-= Install qBittorrent-nox Daemon on Ubuntu
+= Install qBittorrent-nox (4.1.x) Daemon on Ubuntu
 :author: Markus Napp
 :email: mail@markus-napp.de
 :imagesdir: images
 :toc-title: Inhalt
 :icons: font
-:revnumber: 1.4
-:revdate: 12.01.2019
+:revnumber: 1.0
+:revdate: 2019-04-12
 :stylesheet: ../boot-spacelab.css
-:qbt: 4.1.5
-:libtorrent: 1.1.12
+:qbt: 4.2.0
+:libtorrent: 1.2.2
 
 NOTE: Build steps last verified for qBitTorrent {qbt} / libtorrent-rasterbar {libtorrent}
 
@@ -17,8 +17,8 @@ NOTE: Build steps last verified for qBitTorrent {qbt} / libtorrent-rasterbar {li
 If for any reason the following steps do not work or you're just too lazy, you can simply install the latest package versions from the link:https://launchpad.net/~qbittorrent-team/+archive/ubuntu/qbittorrent-stable[qBittorrent PPA] and then skip straight to link:#daemon[setting up the daemon] or if you want to use it manually skip to link:#mime-handler[setting up mime types] for easy Magnet link and torrent handling.
 
 == Install Dependencies
-* Get link:https://github.com/arvidn/libtorrent[Libtorrent Rasterbar sources] (1.1.x)
-* Get link:https://github.com/qbittorrent/qBittorrent/releases[qBittorrent sources] (4.1.x)
+* Get link:https://github.com/arvidn/libtorrent[Libtorrent Rasterbar sources] (1.2.x)
+* Get link:https://github.com/qbittorrent/qBittorrent/releases[qBittorrent sources] (4.2.x)
 * Install OS build tools and deps
 +
 ----
@@ -29,6 +29,19 @@ geoip-database libgeoip-dev libboost-system-dev libboost-chrono-dev libboost-ran
 NOTE: Make sure you have enough memory/SWAP. Trying to compile libtorrent rasterbar on 512MB RAM on a t2.nano EC2 instance fails (see Troubleshooting below).
 
 == Compile libtorrent-rasterbar
+
+[NOTE]
+====
+The steps for compiling libtorrent-rasterbar have changed a bit for the 1.2.x family
+====
+
+// NOTES
+// http://ramblingfoo.blogspot.com/2007/07/required-file-configrpath-not-found.html
+// mkdir build-aux
+// touch build-aux/config.rpath
+// touch build-aux/ltmain.sh
+// ./configure --disable-debug --enable-encryption --prefix=/usr --with-libgeoip=system CXXFLAGS=-std=c++11
+// 
 
 * Configure project
 +
