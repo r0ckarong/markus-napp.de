@@ -14,6 +14,8 @@
 <script src="https://use.fontawesome.com/96d0595752.js"></script>
 ++++
 
+image::SOME_IMAGE_NAME[DESCRIPTION,width=800]
+
 == Zutaten
 
 [options="header",cols="25,75"]
