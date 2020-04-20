@@ -1,0 +1,64 @@
+https://www.reddit.com/r/docker/comments/g50al2/why_do_containers_not_usually_run_as_the_user_are/
+
+Containers are a religion, you gotta have faith
+==
+
+Your first mistake is to assume that people who publish containers know the first thing about system administration or actually share what they know. In my experience, the ecosystem for Kubernetes/Docker/CaaS is driven by "Oh look, someone did this already, let's pull what they did and see where we can go". I call this the NPM problem. People look for "this sort of does what I want, let's pull in this huge dependency that I have no control over". You could also call this the StackOverflow problem but at least SO doesn't allow direct code imports into productive software.
+
+Containers are even worse, has anyone -ever- run a security audit on any of the containers they pull for their dumb projects? No? I couldn't guess why .... maybe because detecting anomalies across an entire random OS version with random package versions and random configuration changes is like finding that grain of salt you purposefully tossed into a desert. You didn't say exactly which desert want to compare similar snapshots of that desert to the types of salt grains you would like to find.
+
+I've come to the conclusion that when you're working with containers, you have to accept a couple of facts:
+
+1) You need to forfeit your urge to control images.
+The only way you can be SURE they are secure is to either create them yourself from the ground up or audit. I'm guessing you can't spend budget (or time) on either.
+If this is a concern to you, containers are not for you. At all (unless you have unlimited budget to create containers or force 3rd party to comply with your compliance).
+
+2) If you REQUIRE security and audit trails you must either trust the source of ALL of the containers you will be deploying or ... not use containers.
+Containers inherently are only as secure as whatever standards the people who first built them, combined with the attack surface of the containing software, have made them.
+If you have chosen use containers thought, you are best off looking at the available solutions, reverse engineering them and building/updating your own containers FROM SCRATCH for the highest possible security.
+The alternative is to shift blame to "whoever build that container in the first place" and leave security updates to the same people.
+But who in their right mind would actually do that *cough cough*?
+
+3) Whatever image you're going to download will likely be from someone who published it to make a point about being able to run it.
+It will NOT come from someone who has thousands of hours of proven uptime and experience and/or has kept up the image with all the changes, improvements and experience from that.
+Images that run production software with advanced configurations might exist but they obviously would be on private repositories; because that's how companies make money.
+
+Ask yourself this:
+If we had the tech to clone your personal accumulated years of experience to some process or new person, would you just volunteer to upload it to a public resource for everyone to download? How would that not impact your ability of using that knowledge and experience of staying employed by those in need of that expertise?
+What if you had made a commitment to spend hundreds of thousands of dollars across a period of time to retain someone with that knowledge and experience? What if this knowledge technically, if applicable to your business, is contractually your property and gives you the sole means of staying in business? Would you just want your employees to forfeit this to some consistently updated repository of "everybody gives up their secrets"?
+No? That's why this doesn't exist. This is the fundamental truth about business and value of experience. People have reached their experience and skillset through a process and this process can and should not be codified into machine
+repeatable units. Meanwhile there are multiple huge hubs of "look, this can work if you do this" and then everything beyond that disappears into the spaces where the funding comes from. This is a totally natural behavior. But on the other end there are still people with lives and interests and jobs that make a living of providing these solutions.
+
+There has not been a little Timmy standing by the side of the road ever offering "Free recipe for lemonade. Sugar, water and lemonades provided for 5ct.".
+Especially not when down the road there is a stand by Tommy offering finished lemonade by the cup for $1. Even Open-Source Timmy is not that benevolent. Maybe if he really hates Tommy.
+
+So think about it.
+
+Wait ... Eat? Family? These are human constructs, nobody cares ... this is a virtualized world now.
+
+Think of containers as taking one of your machines from the datacenter and putting it in a velvet lined box, give it all the pampering and updates it's ever going to see and then pull the plug.
+Whenever you request it, a zombie of it will appear and perform the task you order it to do.
+Then it will go away, unpatched, unloved, unmonitored until it is needed again.
+
+"Admin" stands for "keeping it up"; as in sweeping, cleaning, oiling the door hinges, sorting the file cupboards. All of that stuff.
+
+Working as an admin on containers is more like being a Necromancer at a particularly horrid library. You have done all the upkeep once to your satisfaction, trained all the librarians as you desired and then banished the entire thing into limbo to be preserved and never grow or change until you need it.
+
+When you eventually need it, you conjure the images of former librarians that would know their way around the shelves, you give them exactly as much information as they need to find the tome that was buried there long ago (or even just filed yesterday) and then you banish them into the depths again. They will provide exactly the dewy-decimal dedication that you ask of them, but nothing more.
+
+Computers are no longer pets
+==
+
+I believe this is a problem that is going to disappear with the younger generations that grow up around many technical devices under their direct or indirect control. For many people my age and older, who were born in the 1980s, computers are still mostly singular, expensive and outrageously important devices that deserve to feel dedication, attention and a certain level of loyal care. This is reflected in the way a lot of people who grew up with computer systems of such importance react to their future tasks.
+
+In most of the western world we have the tendency to humanize/anthropomorphize cattle or pets. Many people have various critters as their pets and attribute much importance to them. I am no stranger to this and I love my two
+cats very much and have a lot of fond memories of my previous cat that ran of after my move several years ago. However, machines are not pets. They are not animals or beings. They are entities of metal, silicone and plastic that run electricity in a way entirely designed by humans. They do not possess souls (yet). They do not have and say or expectations in their purpose throughout their existence.
+
+I'm strongly advocating for sysadmins to refrain to anthropomorphize their systems and fall prey to the "sunk-cost-fallacy" version of system administration. Only because you have spent an enormous amount of time and energy keeping a system running, doesn't mean that this system is worth maintaining. There certainly are systems in some industries (look at banking) that have endured decades of service, across many iterations and evolutions of their surrounding technology, only to come out the other end still running and propping up the beams of their respective chapels. Just now, during the COVID-19 epidemic it was revealed that large portions of the United State's unemployment benefit system is still running on `COBOL`. A language that has long been accepted into the realm of grandfathered relics which programmers should diligently observe and acknowledge during a decreasingly relevant period of their basic education and then will forever forget about in the flurry whirlwind of ever changing programming languages and frameworks that the modern job market expects them to master (sometimes in a time travel manner, for longer than the languages have existed).
+
+Your pets might be friends, you will cherish your dog, or you cat, or your iguana or whatever single individual you have gotten accustomed to by being responsible for its care.
+
+Cattle is not your friend
+==
+
+The younger generations have grown up with lots of computers. Basically most devices a child in the western world will touch until they have reached adolescence will at least contain some sort of micro controller.
