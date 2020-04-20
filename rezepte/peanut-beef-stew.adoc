@@ -1,0 +1,121 @@
+= Rezept
+:author: Markus Napp
+:email: mail@markus-napp.de
+:revnumber: 1.0
+:revdate: 2020-04-18
+:imagesdir: images
+:toc-title: Inhalt
+:icons: font
+:stylesheet: ../boot-spacelab.css
+
+<<<
+
+++++
+<script src="https://use.fontawesome.com/96d0595752.js"></script>
+++++
+
+image::peanut-beef-stew.jpg[Peanut Beef Stew,width=800]
+
+== Zutaten
+
+[options="header",cols="25,75"]
+|===
+|Gewicht |Zutat
+
+|1Kg
+|Tafelspitz (Beef Top Round)
+
+|2 EL
+|Tomatenmark
+
+|4 Stück
+|Knoblauchzehe
+
+|250 Gramm
+|Karotte
+
+|50-100ml
+|Rotwein (optional)
+
+|150 Gramm
+|Dattel/Cherrytomaten
+
+|200 Gramm
+|Zwiebel
+
+|200 Gramm
+|Erdnussbutter (Crunchy)
+
+|ca. 1L
+|Rinderbrühe
+
+|2 EL
+|Sonnenblumenöl
+
+|1 EL
+|Butterschmalz
+
+|1/2 TL
+|Senfpulver
+
+|1/2 TL
+|Pfeffer (weiss) gemahlen
+
+|1/2 TL
+|Paprikapulver (edelsüss oder rosenscharf nach Geschmack)
+
+|1 TL
+|Chicken Salt (oder Salz)
+
+|1 TL
+|Salz
+
+|1/2 TL
+|Zitronensaft
+
+|1 EL
+|Apfelessig (nach Geschmack)
+
+|1 TL
+|Zucker
+
+|4 TL
+|Worcestershire Sauce
+
+|1/4 TL
+|Zimt (gemahlen)
+
+|3 EL
+|Africa Rub Gewürz
+
+|===
+
+NOTE: Ergibt 8 Portionen
+
+NOTE: Rezept für einen 10 Inch Dutch Oven (ca. 4 Liter Fassungsvermögen)
+
+== Zubereitung
+
+. Fleisch in Würfel schneiden
+. Fleisch würzen (Rub, Öl, Worcestershire, Weisser Pfeffer, Senfpulver)
+. Zwiebeln/Kartotten/Knoblauch schneiden
+. Dutch Oven aufheizen
+. Fett in den DO
+. Fleisch in 2-3 Chargen (je nach DO und Hitze) anbraten und wieder rausnehmen
+. Zwiebeln/Karotten/Knoblauch im Fleischsaft anbraten
+. Tomatenmark dazu
+. Erdnussbutter dazu
+. Rotwein angiessen und einkochen
+. Brühe angiessen und einkochen
+. Fleisch wieder dazu
+. Mit Brühe aufgiessen
+. Mehr vom Afrikanischen Gewürz dazu
+. 90 Minuten kochen lasssen, ggf. nach ca. 60 Minuten Wasser nachgiessen (wahrscheinlich)
+. Alle 10-15 Minuten umrühren und ggf. DO drehen damit Hitze sich gleich verteilt
+. Mit Salz, Zucker, Essig nach G
+
+[start=4]
+
+. Schritt 4
+
+*Lasst's euch schmecken!*
