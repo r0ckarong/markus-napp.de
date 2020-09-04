@@ -12,6 +12,9 @@ These faces are the result of pausing a playing entertainment video for any reas
 They are not staged, I do not look for these to happen. Whenever I find them, I try
 to document them. People look weird.
 
+# The faces should be taken from some real world video source.
+# Then they should be resized to 500x? dimensions.
+
 Enjoy yourself, you weird looker.
 
 .20.07.2018, Subject: Unknown, The Joel MacHale Show with Joel MacHale, Season 2 Episode 4, Netflix
@@ -58,3 +61,7 @@ image:15.jpg[15, width=800px]
 
 .19.07.2019, Subject: Natasha Leggero, Comedy Central [YouTube]
 image:16.jpg[16, width=800px]
+
+.02.09.2020, Subject: Farin Urlaub (Jan Vetter), die ärzte - Live bei Harald
+Schmidt 21.03.2012 (Talk) [YouTube]
+image:17.jpg[17, width=800px]
