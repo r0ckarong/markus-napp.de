@@ -1,10 +1,11 @@
 = markus-napp.de
 :author: Markus Napp
-:email: mail@markus-napp.de
+:email: post@markus-napp.de
 :toc-title: Inhalte
 :stylesheet: boot-spacelab.css
-:revnumber: 3.0
-:revdate: 2019-12-04
+:revnumber: 3.1
+:revdate: 2020-11-03
+:icons: font
 
 <<<
 
@@ -12,7 +13,10 @@
 <script src="https://use.fontawesome.com/96d0595752.js"></script>
 ++++
 
-:icons: font
+== About me
+
+* link:lebenslauf.html[Lebenslauf]
+
 == Programming / Electronics
 
 * link:code/build-a-github-button.html[Adding an "Improve This"-Button to AsciiBinder based documentation]
