@@ -1,0 +1,164 @@
+:date: 03.11.2020
+
+= Lebenslauf
+
+== Zu meiner Person
+
+[frame="none",grid="none",cols="3"]
+|===
+|Name:
+|Markus Napp
+.9+>|image:me_2020.jpg[Markus Napp,width=90%]
+
+|Geboren am:
+|29. Mai 1983
+
+|Geburtsort:
+|Bad Soden am Taunus
+
+|Familienstand:
+|verheiratet, ein Kind
+
+|Nationalität:
+|deutsch
+
+|Addresse:
+a|Adolf-Damaschke-Strasse 57 +
+65824 Schwalbach am Taunus +
+Deutschland
+
+|E-Mail:
+|post@markus-napp.de
+
+|Telefon:
+|+49 1577 507 0960
+
+|LinkedIn:
+|https://www.linkedin.com/in/markus-napp/
+|===
+
+'''
+
+Mir liegen Details und Vollständigkeit sehr am Herzen. Mein Augenmerk liegt dabei
+immer auf dem "Big Picture" anhand dessen ich erkennen kann welche Fragen ich
+über die aktuelle Aufgabe (noch) stellen muss. Mit diesen Erkenntnissen
+kann ich dann gezielt Aufgaben lösen und Prozesse optimieren um diese langfristig
+und bei schwankender Belastung beherrschbar zu machen.
+
+Ich bin ein Freund von direkter, transparenter Kommunikation und proaktiver
+Zusammenarbeit. Mitdenken ist für mich nicht nur ein Wort sondern ein Anspruch
+an mich selbst.
+
+In meiner Freizeit schaue ich mir gerne mit meiner Familie interessante Orte an.
+Alleine ansonsten auch gerne die Natur beim Querfeldein-Wandern im Wald. Bei
+schlechtem Wetter findet man mich gewöhnlich in meiner Werkstatt oder beim Kochen.
+
+
+== Meine letzten drei Positionen
+
+[frame="none",cols="2"]
+|===
+|06/2018 - jetzt
+a|
+*Senior Technical Writer (SUSE CaaS Platform)* +
+SUSE Software Solutions Germany GmbH, Nürnberg
+
+* Projektplanung und -durchführung der Produkt-Dokumentation für SUSE CaaS Platform v3/v4/v4.5
+* Verfassen und Pflege von Release Notes für SUSE CaaS Platform und SUSE Linux Enterprise Server
+
+* Sonderprojekte:
+** Planung und Erstellung von “Enterprise” Dokumentation zur SUSE CaaS Platform v3 für ein großes schweizerisches Finanzunternehmen.
+** Produktübergreifende “Best Practices” Dokumentation zu SUSE Private Registry Powered by Harbor 2.1
+
+|08/2017 - 12/2017
+a|*Interim Team Lead HIRO Graph* +
+arago GmbH, Frankfurt a.M.
+
+* Scrum Master
+** Release Planung
+** Sprint Planning Meetings
+** Koordination Graph Team
+* Erstellung Roadmap und Projekt-Drilldown
+* Workshop: Objectives and Key Results
+
+|04/2013 - 05/2018
+a|
+*Technical Writer (arago HIRO)* +
+arago GmbH, Frankfurt am Main
+
+* Produktdokumentation arago HIRO/AutoPilot
+** Konzeption und Umsetzung eines Continuous Integration/Delivery Workflows zur Publikation (jenkins, GitHub, AsciiBinder)
+** Konzeption und Umsetzung der Dokumentationsportale (HTML, CSS)
+** Gestaltung und Deployment von Layout Vorlagen für die Dokumentationsinhalte (CSS, HTML, JavaScript, Ruby)
+** Grundlegende Überarbeitung und Neuausrichtung der Installations-/Administrations- und Benutzeranleitungen
+** Definition eines 3rd Party Compliance Process für Open Source Komponenten
+
+* Sonstige Aufgaben / Projekte
+** Aufbau und Einführung des Customer Support Tools Zendesk
+** Administrative Arbeiten an Infrastruktur (JIRA, GitHub, Slack, Zendesk)
+** Moderation Sprint Reviews
+|===
+
+
+== Beruflicher Werdegang
+
+[frame="none",cols="2"]
+|===
+|06/2018 - jetzt
+|*Senior Technical Writer* +
+bei SUSE Software Solutions Germany GmbH, Nürnberg
+
+|08/2017 - 12/2017
+a|*Interim Team Lead HIRO Graph* +
+bei arago GmbH, Frankfurt a.M.
+
+|09/2016 - 05/2018
+|*Technical Writer (arago HIRO)* +
+bei arago GmbH, Frankfurt a.M.
+
+|04/2013 - 09/2016
+|*Technical Writer (arago AutoPilot)* +
+bei arago GmbH, Frankfurt a.M.
+
+a|
+06/2008 - 06/2010 & 06/2011 - 12/2012
+|*Freelance Customer Service Representative* +
+bei CCS GmbH, Hofheim a.Ts.
+
+|05/2006 - 05/2008
+|*Projektmitarbeiter Konzernkonsolidierung* +
+bei GeGa Lotz GmbH, Hofheim/Diedenbergen
+
+|2005 - 2006
+|*Kaufmännischer Angestellter* +
+bei Bene Deutschland GmbH, Frankfurt a.M.
+|===
+
+== Ausbildung
+
+[frame="none",cols="2"]
+|===
+|2006 - 2010
+|*Magisterstudiengang Amerikanistik* (Ohne Abschluss) +
+J.W. Goethe Universität Frankfurt a.M.
+
+|2003 - 2005
+|*Ausbildung zum Groß- und Außenhandelskaufmann* +
+bei Objektform Büroeinrichtungen GmbH, Kronberg/Ts.
+
+|===
+
+== Sprachkenntnisse
+
+[frame="none",grid="none",cols="2"]
+|===
+|Deutsch
+|Muttersprache
+
+|Englisch
+|Verhandlungssicher
+
+|===
+
+
+Schwalbach, den {date}
