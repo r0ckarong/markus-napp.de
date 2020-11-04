@@ -3,8 +3,8 @@
 :email: post@markus-napp.de
 :toc-title: Inhalte
 :stylesheet: boot-spacelab.css
-:revnumber: 3.1
-:revdate: 2020-11-03
+:revnumber: 3.2
+:revdate: 2020-11-04
 :icons: font
 
 <<<
@@ -15,7 +15,8 @@
 
 == About me
 
-* link:lebenslauf.html[Lebenslauf]
+* link:lebenslauf.html[Lebenslauf] link:lebenslauf.pdf[PDF]
+* link:lebenslauf_en.html[CV English] link:lebenslauf_en.pdf[PDF]
 
 == Programming / Electronics
 
