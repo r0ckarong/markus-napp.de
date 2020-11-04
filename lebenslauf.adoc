@@ -22,7 +22,7 @@
 |Nationalität:
 |deutsch
 
-|Addresse:
+|Adresse:
 a|Adolf-Damaschke-Strasse 57 +
 65824 Schwalbach am Taunus +
 Deutschland
@@ -46,7 +46,7 @@ kann ich dann gezielt Aufgaben lösen und Prozesse optimieren um diese langfrist
 und bei schwankender Belastung beherrschbar zu machen.
 
 Ich bin ein Freund von direkter, transparenter Kommunikation und proaktiver
-Zusammenarbeit. Mitdenken ist für mich nicht nur ein Wort sondern ein Anspruch
+Zusammenarbeit. "Mitdenken" ist für mich nicht nur ein Wort sondern ein Anspruch
 an mich selbst.
 
 In meiner Freizeit schaue ich mir gerne mit meiner Familie interessante Orte an.
@@ -63,12 +63,12 @@ a|
 *Senior Technical Writer (SUSE CaaS Platform)* +
 SUSE Software Solutions Germany GmbH, Nürnberg
 
-* Projektplanung und -durchführung der Produkt-Dokumentation für SUSE CaaS Platform v3/v4/v4.5
-* Verfassen und Pflege von Release Notes für SUSE CaaS Platform und SUSE Linux Enterprise Server
+* Projektplanung und -durchführung der Produkt-Dokumentation für _SUSE CaaS Platform v3/v4/v4.5_
+* Verfassen und Pflege von Release Notes für _SUSE CaaS Platform_ und _SUSE Linux Enterprise Server_
 
 * Sonderprojekte:
-** Planung und Erstellung von “Enterprise” Dokumentation zur SUSE CaaS Platform v3 für ein großes schweizerisches Finanzunternehmen.
-** Produktübergreifende “Best Practices” Dokumentation zu SUSE Private Registry Powered by Harbor 2.1
+** Planung und Erstellung von “Enterprise” Dokumentation zur _SUSE CaaS Platform v3_ für ein großes schweizerisches Finanzunternehmen.
+** Produktübergreifende “Best Practices” Dokumentation zu _SUSE Private Registry Powered by Harbor 2.1_
 
 |08/2017 - 12/2017
 a|*Interim Team Lead HIRO Graph* +
@@ -77,7 +77,7 @@ arago GmbH, Frankfurt a.M.
 * Scrum Master
 ** Release Planung
 ** Sprint Planning Meetings
-** Koordination Graph Team
+** Koordination "HIRO Graph" Team
 * Erstellung Roadmap und Projekt-Drilldown
 * Workshop: Objectives and Key Results
 
@@ -86,8 +86,8 @@ a|
 *Technical Writer (arago HIRO)* +
 arago GmbH, Frankfurt am Main
 
-* Produktdokumentation arago HIRO/AutoPilot
-** Konzeption und Umsetzung eines Continuous Integration/Delivery Workflows zur Publikation (jenkins, GitHub, AsciiBinder)
+* Produktdokumentation _arago HIRO/AutoPilot_
+** Konzeption und Umsetzung eines Continuous Integration/Delivery Workflows zur Publikation (Jenkins, GitHub, AsciiBinder)
 ** Konzeption und Umsetzung der Dokumentationsportale (HTML, CSS)
 ** Gestaltung und Deployment von Layout Vorlagen für die Dokumentationsinhalte (CSS, HTML, JavaScript, Ruby)
 ** Grundlegende Überarbeitung und Neuausrichtung der Installations-/Administrations- und Benutzeranleitungen
@@ -158,6 +158,8 @@ bei Objektform Büroeinrichtungen GmbH, Kronberg/Ts.
 |Englisch
 |Verhandlungssicher
 
+|Französisch
+|Schulkenntnisse
 |===
 
 

@@ -1,0 +1,152 @@
+:date: 04.11.2020
+
+= Curriculum Vitae
+
+== About Me
+
+[frame="none",grid="none",cols="2"]
+|===
+|Name:
+|Markus Napp
+
+|Nationality:
+|German
+
+|Address:
+a|Adolf-Damaschke-Strasse 57 +
+65824 Schwalbach am Taunus +
+Germany
+
+|E-Mail:
+|post@markus-napp.de
+
+|Phone:
+|+49 1577 507 0960
+
+|LinkedIn:
+|https://www.linkedin.com/in/markus-napp/
+|===
+
+'''
+
+I strive for completeness and refined detail. My focus is always on the "big picture"
+which gives me insights on what questions I must (further) ask about the current task.
+With those insights I can optimize processes and solve problems to make them
+controllable in the long run.
+
+I'm a defender of direct, transparent communication and proactive collaboration.
+"Thinking ahead/along" is not just a phrase but some I expect of myself.
+
+My spare time is divided between exploring interesting places with my family or
+wandering through the woods on my own. If the weather is really poor, you will
+typically find me in my workshop or while cooking.
+
+== My last three positions
+
+[frame="none",cols="2"]
+|===
+|06/2018 - jetzt
+a|
+*Senior Technical Writer (SUSE CaaS Platform)* +
+SUSE Software Solutions Germany GmbH, Nürnberg
+
+* Project planning and execution for product documentation of _SUSE CaaS Platform v3/v4/v4.5_
+* Creation and maintenance of release notes for _SUSE CaaS Platform_ and _SUSE Linux Enterprise Server_
+
+* Special projects:
+** Planning and delivery of "Enterprise" level documentation for _SUSE CaaS Platform v3_ for a large swiss banking corporation
+** "Best practices" documentation for _SUSE Private Registry Powered by Harbor 2.1_ spanning multiple products
+
+|08/2017 - 12/2017
+a|*Interim Team Lead HIRO Graph* +
+arago GmbH, Frankfurt a.M.
+
+* Scrum Master
+** Release planning
+** Sprint planning meetings
+** Coordination "HIRO Graph" team
+* Product roadmap und project-drilldown
+* Workshop: Objectives and Key Results
+
+|04/2013 - 05/2018
+a|
+*Technical Writer (arago HIRO)* +
+arago GmbH, Frankfurt am Main
+
+* Planning and execution of product documentation for _arago HIRO/AutoPilot_
+** Conception and delivery of a CI/CD (Continuous Integration/Delivery) workflow for publishing (Jenkins, GitHub, AsciiBinder)
+** Conception and delivery of documentation portal websites
+** Design and delivery of layout templates for documentation artifacts (CSS, HTML, JavaScript, Ruby)
+** From scratch rebuild and re-conception of installation, administration and user manuals
+** Conception and delivery of a 3rd party compliance process for open source components
+
+* Special projects:
+** Introduction and administration of customer support via Zendesk
+** Administrative tasks for infrastructure software (JIRA, GitHub, Slack, Zendesk)
+** Moderating sprint reviews
+|===
+
+
+== Work Experience
+
+[frame="none",cols="2"]
+|===
+|06/2018 - jetzt
+|*Senior Technical Writer* +
+at SUSE Software Solutions Germany GmbH, Nuremberg
+
+|08/2017 - 12/2017
+a|*Interim Team Lead HIRO Graph* +
+at arago GmbH, Frankfurt a.M.
+
+|09/2016 - 05/2018
+|*Technical Writer (arago HIRO)* +
+at arago GmbH, Frankfurt a.M.
+
+|04/2013 - 09/2016
+|*Technical Writer (arago AutoPilot)* +
+at arago GmbH, Frankfurt a.M.
+
+a|
+06/2008 - 06/2010 & 06/2011 - 12/2012
+|*Freelance Customer Service Representative* +
+at CCS GmbH, Hofheim a.Ts.
+
+|05/2006 - 05/2008
+|*Accounting project "group consolidation"* +
+at GeGa Lotz GmbH, Hofheim/Diedenbergen
+
+|2005 - 2006
+|*Commercial clerk* +
+at Bene Deutschland GmbH, Frankfurt a.M.
+|===
+
+== Education and Traning
+
+[frame="none",cols="2"]
+|===
+|2006 - 2010
+|*Master of Arts American Studies* (Without a degree) +
+J.W. Goethe Universität Frankfurt a.M.
+
+|2003 - 2005
+|*Trainee in Wholesale and Foreign Trade* +
+at Objektform Büroeinrichtungen GmbH, Kronberg/Ts.
+|===
+
+== Language Skills
+
+[frame="none",grid="none",cols="2"]
+|===
+|German
+|Native
+
+|English
+|Near Native / Fluent
+
+|French
+|Basic
+|===
+
+
+Schwalbach on {date}
