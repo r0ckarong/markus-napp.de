@@ -1,4 +1,5 @@
-:date: 03.11.2020
+:revdate: 04.11.2020
+:revnumber: 1.1
 
 = Lebenslauf
 
@@ -8,7 +9,7 @@
 |===
 |Name:
 |Markus Napp
-.9+>|image:me_2020.jpg[Markus Napp,width=90%]
+.9+>|image:me.jpg[Markus Napp,width=90%]
 
 |Geboren am:
 |29. Mai 1983
@@ -17,7 +18,7 @@
 |Bad Soden am Taunus
 
 |Familienstand:
-|verheiratet, ein Kind
+|verheiratet
 
 |Nationalität:
 |deutsch
@@ -40,14 +41,18 @@ Deutschland
 '''
 
 Mir liegen Details und Vollständigkeit sehr am Herzen. Mein Augenmerk liegt dabei
-immer auf dem "Big Picture" anhand dessen ich erkennen kann welche Fragen ich
-über die aktuelle Aufgabe (noch) stellen muss. Mit diesen Erkenntnissen
-kann ich dann gezielt Aufgaben lösen und Prozesse optimieren um diese langfristig
-und bei schwankender Belastung beherrschbar zu machen.
+immer auf dem "Big Picture" anhand dessen ich erkennen kann, welche Fragen ich
+über die aktuelle Aufgabe (noch) stellen muss um am Ende bei einem stimmigen
+Gesamtbild anzukommen. Mit diesen Erkenntnissen kann ich dann gezielt Aufgaben
+lösen und Prozesse optimieren, um diese langfristig zuverlässig beherrschbar zu
+machen.
 
-Ich bin ein Freund von direkter, transparenter Kommunikation und proaktiver
-Zusammenarbeit. "Mitdenken" ist für mich nicht nur ein Wort sondern ein Anspruch
-an mich selbst.
+Um optimale Leistung zu erbringen, schätze und pflege ich direkte, transparente
+Kommunikation und proaktive Zusammenarbeit. In der gemeinsamen Teamarbeit lege
+ich Wert auf den Blick für Herausforderungen und Chancen, die aus den
+einzelnen Aspekten allein nicht immer erkennbar sind. Der Ansatz im Sinne von:
+_"Das Ganze ist größer als die Summe seiner Teile"_ hilft dabei, das Quentchen "Mehr"
+heraus zu holen, dass vom Kunden oft erwartet aber selten genau benannt werden kann.
 
 In meiner Freizeit schaue ich mir gerne mit meiner Familie interessante Orte an.
 Alleine ansonsten auch gerne die Natur beim Querfeldein-Wandern im Wald. Bei
@@ -60,21 +65,25 @@ schlechtem Wetter findet man mich gewöhnlich in meiner Werkstatt oder beim Koch
 |===
 |06/2018 - jetzt
 a|
-*Senior Technical Writer (SUSE CaaS Platform)* +
+*Senior Technical Writer (SUSE CaaS Platform)*+
 SUSE Software Solutions Germany GmbH, Nürnberg
 
-* Projektplanung und -durchführung der Produkt-Dokumentation für _SUSE CaaS Platform v3/v4/v4.5_
-* Verfassen und Pflege von Release Notes für _SUSE CaaS Platform_ und _SUSE Linux Enterprise Server_
+* Projektplanung und -durchführung der Produkt-Dokumentation für _SUSE CaaS Platform v3/v4/v4.5_ +
+(Enterprise Kubernetes Container Orchestration Plattform)
+* Verfassen und Pflege von Release Notes für _SUSE CaaS Platform_ und _SUSE Linux Enterprise Server_ +
+(Enterprise Linux Distribution)
 
 * Sonderprojekte:
 ** Planung und Erstellung von “Enterprise” Dokumentation zur _SUSE CaaS Platform v3_ für ein großes schweizerisches Finanzunternehmen.
-** Produktübergreifende “Best Practices” Dokumentation zu _SUSE Private Registry Powered by Harbor 2.1_
+** Produktübergreifende “Best Practices” Dokumentation zu _SUSE Private Registry Powered by Harbor 2.1_ +
+(Edge Computing Kubernetes Container Image Registry Service)
 
 |08/2017 - 12/2017
 a|*Interim Team Lead HIRO Graph* +
 arago GmbH, Frankfurt a.M.
 
-* Scrum Master
+* Scrum Master für HIRO Graph +
+(eine semantische, verteilte Graph Plattform als Basis einer künstlichen Intelligenz)
 ** Release Planung
 ** Sprint Planning Meetings
 ** Koordination "HIRO Graph" Team
@@ -86,7 +95,8 @@ a|
 *Technical Writer (arago HIRO)* +
 arago GmbH, Frankfurt am Main
 
-* Produktdokumentation _arago HIRO/AutoPilot_
+* Produktdokumentation _arago HIRO/AutoPilot_ +
+(Plattform für allgemein anwendbare künstliche Intelligenz)
 ** Konzeption und Umsetzung eines Continuous Integration/Delivery Workflows zur Publikation (Jenkins, GitHub, AsciiBinder)
 ** Konzeption und Umsetzung der Dokumentationsportale (HTML, CSS)
 ** Gestaltung und Deployment von Layout Vorlagen für die Dokumentationsinhalte (CSS, HTML, JavaScript, Ruby)
@@ -163,4 +173,4 @@ bei Objektform Büroeinrichtungen GmbH, Kronberg/Ts.
 |===
 
 
-Schwalbach, den {date}
+Schwalbach, den {revdate}
